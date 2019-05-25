@@ -1,0 +1,39 @@
+Problem 1
+A)
+1. Acceptable
+2. Not Acceptable
+3. Acceptable
+4. Not Acceptable
+5. Acceptable
+6. Not Acceptable
+7. Not Acceptable
+
+B)
+1,2,3
+
+C)
+3
+
+D)
+2,3
+
+E)
+1
+
+F)
+True
+False
+True
+
+
+Problem 2
+A)
+1
+B)
+	1- git add hw1q2b.cpp
+	2- git log
+C)
+git clone git@github.com:ykelty/hw-usc-ykelty
+
+Problem 7
+A)
