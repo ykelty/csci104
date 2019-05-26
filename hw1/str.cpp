@@ -10,7 +10,7 @@ using namespace std;
 Str::Str(){
 
 	data_ = new char(1);
-	
+	*data_ = NULL;
 
 }
 
@@ -72,14 +72,30 @@ char const & Str::operator[](unsigned int i) const{
 Str Str::operator+(const char* rhs  ) const{
 	Str temp;
 	temp.data_ = new char(strlen(data_) + strlen(rhs) + 1);
+	
 	if(rhs == nullptr){
 		return *this;
 	}else{
-
 		temp.data_ = strcat(data_ , rhs);
 		return temp;
+		
 	}
 }
+Str Str::operator+(const Str& other) const{
+	Str temp;
+	temp.data_ = new char(strlen(data_) + strlen(other.data_) + 1);
+	
+	if(other.data_ == nullptr){
+		return *this;
+	}else{
+		temp.data_ = strcat(data_ , other.data_);
+		return temp;
+		
+	}
+
+
+}
+
 
 bool Str::operator==(const Str &rhs){
 	if(*data_ == *rhs.data_){
@@ -120,10 +136,12 @@ bool Str::operator>(const Str &rhs){
 
 
 
-std::ostream& operator<<(std::ostream& os, Str& s){
+std::ostream& operator<<(std::ostream& os, Str s){
 	os << s.data_;	
 	return os;
 }
+
+
 
 std::istream& operator>>(std::istream& istr, Str& s)
 {
