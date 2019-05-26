@@ -61,8 +61,17 @@ public:
     */
    char const & operator[](unsigned int i) const;
         
+   bool operator==(const Str &rhs);
 
    
+   bool operator!=(const Str &rhs);
+
+   
+   bool operator<(const Str &rhs);
+
+
+   bool operator>(const Str &rhs);
+
    /**
     * String concatenation operator
     *  E.g. str s1; cout << s1 + " world" << endl;
@@ -70,6 +79,7 @@ public:
     */
    Str operator+(const char* rhs  ) const;
 
+   friend std::ostream& operator<<(std::ostream& os, Str& s);
 
    /**
     * istream (<<) operator
