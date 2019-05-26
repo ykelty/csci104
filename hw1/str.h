@@ -16,6 +16,11 @@ public:
   
 
   Str();
+
+  ~Str(){delete [] data_;};
+
+  Str(const Str& rhs);
+  
   /**
    * Character array constructor
    *  If s is NULL create a string that contains
