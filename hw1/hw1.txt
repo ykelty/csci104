@@ -37,3 +37,18 @@ git clone git@github.com:ykelty/hw-usc-ykelty
 
 Problem 7
 A)
+	Entry
+	~Str
+	~Str
+B)  
+	Copy Str
+	Copy Str
+	Entry
+	~Str
+	~Str
+C)
+
+Wrapper::Wrapper(const Str& name, const Str& phone)
+{
+	e_= new Entry(name, phone);
+}
