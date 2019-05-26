@@ -79,7 +79,9 @@ public:
     */
    Str operator+(const char* rhs  ) const;
 
-   friend std::ostream& operator<<(std::ostream& os, Str& s);
+   Str operator+(const Str& other) const;
+
+   friend std::ostream& operator<<(std::ostream& os, Str s);
 
    /**
     * istream (<<) operator
