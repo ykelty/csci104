@@ -13,20 +13,28 @@ Str::Str(){
 	*data_ = NULL;
 
 }
+Str::Str(const Str& rhs){
+	data_ = new char(strlen(rhs.data_) + 1);
+	data_ = strcpy(data_,rhs.data_);
 
+}
 Str::Str(const char* s){
 
 	if(s == nullptr){
 		data_ = new char(1);
 		*data_ = NULL;
 	}else{
+		
 		data_ = new char(strlen(s)+1);
 		data_ = strcpy(data_,s);
+		
 	}
 }
 
+
+
 Str& Str::operator=(const char* s){
-	delete [] data_;
+	
 	data_ = new char(strlen(s)+1);
 	if(s == nullptr){
 		*data_ = NULL;
@@ -38,14 +46,24 @@ Str& Str::operator=(const char* s){
 }
 
 Str& Str::operator+=(const Str& s){
-	data_ = strcpy(data_, s.data_);
+	cout << "data= " << data_ << endl; 
+	Str temp;
+	strcpy(temp.data_, data_);
+	data_ = new char(strlen(data_)+strlen(s.data_)+1);
+	strcat(temp.data_, s.data_);
+	strcpy(data_,temp.data_);
+	cout << "data= " << data_ << endl; 
 	return *this;
 }
 
 Str& Str::operator+=(const char* s) {
-
-	//data_ = new char(strlen(data_)+strlen(s)+1);
-	data_ = strcat(data_ , s);
+	cout << "data= " << data_ << endl; 
+	Str temp;
+	strcpy(temp.data_, data_);
+	data_ = new char(strlen(data_)+strlen(s)+1);
+	strcat(temp.data_ , s);
+	strcpy(data_,temp.data_);
+	cout << "data= " << data_ << endl; 
 	return *this;
 }
 
@@ -70,16 +88,22 @@ char const & Str::operator[](unsigned int i) const{
 }
 
 Str Str::operator+(const char* rhs  ) const{
+	
 	Str temp;
 	temp.data_ = new char(strlen(data_) + strlen(rhs) + 1);
 	
 	if(rhs == nullptr){
 		return *this;
 	}else{
-		temp.data_ = strcat(data_ , rhs);
+		
+		strcpy(temp.data_,data_);
+		
+		temp.data_ = strcat(temp.data_ , rhs);
+		
 		return temp;
 		
 	}
+
 }
 Str Str::operator+(const Str& other) const{
 	Str temp;
@@ -88,7 +112,8 @@ Str Str::operator+(const Str& other) const{
 	if(other.data_ == nullptr){
 		return *this;
 	}else{
-		temp.data_ = strcat(data_ , other.data_);
+		strcpy(temp.data_, data_);
+		temp.data_ = strcat(temp.data_ , other.data_);
 		return temp;
 		
 	}
