@@ -9,13 +9,13 @@ using namespace std;
 // Add your implementations here.
 Str::Str(){
 	data_ = new char(1);
-	*data_ = NULL;
+	*data_ = '\0';
 
 }
 
 Str::Str(const Str& rhs){
-
-	data_ = new char(strlen(rhs.data_) + 1);
+	int len = strlen(rhs.data_) + 1 ;
+	data_ = new char(len);
 	data_ = strcpy(data_,rhs.data_);
 
 }
@@ -24,10 +24,10 @@ Str::Str(const char* s){
 
 	if(s == nullptr){
 		data_ = new char(1);
-		*data_ = NULL;
+		*data_ = '\0';
 	}else{
-		
-		data_ = new char(strlen(s)+1);
+		int len = strlen(s)+1;
+		data_ = new char(len);
 		data_ = strcpy(data_,s);
 	}
 
@@ -36,10 +36,10 @@ Str::Str(const char* s){
 
 
 Str& Str::operator=(const char* s){
-	
-	data_ = new char(strlen(s)+1);
+	int len = strlen(s)+1;
+	data_ = new char(len);
 	if(s == nullptr){
-		*data_ = NULL;
+		*data_ = '\0';
 		return *this;
 	}else{
 		 data_= strcpy(data_,s);
@@ -52,7 +52,8 @@ Str& Str::operator+=(const Str& s){
 	
 	Str temp;
 	strcpy(temp.data_, data_);
-	data_ = new char(strlen(data_)+strlen(s.data_)+1);
+	int len = strlen(data_)+strlen(s.data_)+1;
+	data_ = new char(len);
 	strcat(temp.data_, s.data_);
 	strcpy(data_,temp.data_);
 	return *this;
@@ -63,7 +64,8 @@ Str& Str::operator+=(const char* s) {
 	
 	Str temp;
 	strcpy(temp.data_, data_);
-	data_ = new char(strlen(data_)+strlen(s)+1);
+	int len = strlen(data_)+strlen(s)+1;
+	data_ = new char(len);
 	strcat(temp.data_ , s);
 	strcpy(data_,temp.data_);
 	return *this;
@@ -98,7 +100,8 @@ char const & Str::operator[](unsigned int i) const{
 Str Str::operator+(const char* rhs  ) const{
 	
 	Str temp;
-	temp.data_ = new char(strlen(data_) + strlen(rhs) + 1);
+	int len = strlen(data_) + strlen(rhs) + 1;
+	temp.data_ = new char(len);
 	
 	if(rhs == nullptr){
 		return *this;
@@ -115,7 +118,8 @@ Str Str::operator+(const char* rhs  ) const{
 Str Str::operator+(const Str& other) const{
 
 	Str temp;
-	temp.data_ = new char(strlen(data_) + strlen(other.data_) + 1);
+	int len = strlen(data_) + strlen(other.data_) + 1;
+	temp.data_ = new char(len);
 	
 	if(other.data_ == nullptr){
 		return *this;
