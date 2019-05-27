@@ -13,12 +13,12 @@ public:
    * Default constructor should create a string
    * equal to ""
    */
-  
-
   Str();
 
+  //destructor
   ~Str(){delete [] data_;};
 
+  //Copy constructor
   Str(const Str& rhs);
   
   /**
@@ -65,16 +65,17 @@ public:
     * Should throw std::out_of_range if invalid index is passed
     */
    char const & operator[](unsigned int i) const;
-        
+  
+   //Checks if two String objects are equal
    bool operator==(const Str &rhs);
 
-   
+   //Checks if two String objects are not equal
    bool operator!=(const Str &rhs);
 
-   
+   //Checks if one String object is less than another string object
    bool operator<(const Str &rhs);
 
-
+   //Checks if one String object is greater than another string object
    bool operator>(const Str &rhs);
 
    /**
@@ -84,14 +85,17 @@ public:
     */
    Str operator+(const char* rhs  ) const;
 
+   //Concatenates two String objects
    Str operator+(const Str& other) const;
 
+   //ostream (<<) operator
    friend std::ostream& operator<<(std::ostream& os, Str s);
 
    /**
     * istream (<<) operator
     */
    friend std::istream& operator>>(std::istream& istr, Str& s);
+
    private:
    // You must use this data member
    char* data_;
