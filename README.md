@@ -1,5 +1,5 @@
 # CS 104 Student Repository
 
-- **Name**: Tommy Trojan
-- **USC ID**: 1234567890
-- **Email**: ttrojan@usc.edu
+- **Name**: Yang Kelty
+- **USC ID**: 3625146573
+- **Email**: ykelty@usc.edu
