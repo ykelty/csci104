@@ -33,7 +33,7 @@ int main(int argc, char * argv[] ){
 			i++;
 		}
 
-		for(int j =i+1; j < line.size(); j++){
+		for(int j =i+1; j < (int)line.size(); j++){
 			if(islower(line[j])){ //change all major characters to uppercase
 				
 				line[j] = toupper(line[j]);
@@ -89,7 +89,7 @@ int main(int argc, char * argv[] ){
 		}
 
 
-		for(int i = 0; i < line.size()-1; i++){
+		for(int i = 0; i < (int)line.size()-1; i++){
 
 			if(islower(line[i])){
 				
@@ -109,7 +109,7 @@ int main(int argc, char * argv[] ){
 		s1.insert(major);
 		
 		
-		if(length>2){ //
+		if(length>2){ //checks for multiple majors
 			
 			set<string> s3;
 			set<string> s4;
@@ -127,29 +127,6 @@ int main(int argc, char * argv[] ){
 			}
 			
 			
-			//s3 = s1 & allMajors[major];
-			/*
-			for(set<string>::iterator iter = s3.begin(); iter != s3.end(); ++iter){
-				ofile << *iter << " ";
-			}
-
-			
-			/*for(map<string,set<string> >::iterator it=allMajors.begin(); it != allMajors.end(); ++it){
-				set<string> s6 = it->second[*itr];
-				
-				for(set<string>:: iterator itr = s1.begin(); itr != s1.end(); ++itr){
-					if(*itr == it->first){
-						//ofile << major << endl;
-						ofile << *itr << endl;	
-
-					}
-
-				}
-				for(set<string>::iterator iter = s6.begin(); iter != s6.end(); ++iter){
-					ofile << *iter << endl;
-				}
-				
-			}*/
 			for(set<string>:: iterator itr = s1.begin(); itr != s1.end(); ++itr){
 				ofile << *itr << " ";
 			}
@@ -168,32 +145,8 @@ int main(int argc, char * argv[] ){
 
 			
 		
-		}else{
+		}else{//just one major
 
-
-			/*
-			for(set<string>:: iterator itr = s1.begin(); itr != s1.end(); ++itr){
-				ofile << *itr << endl;
-
-			}
-			/*
-			for(map<string,set<string> >::iterator it=allMajors.begin(); it != allMajors.end(); ++it){
-				set<string> s6 = it->second;
-				for(set<string>:: iterator itr = s1.begin(); itr != s1.end(); ++itr){
-					if(*itr == it->first){
-
-						ofile << it->first <<endl;	
-
-						
-					}
-
-				}
-				for(set<string>::iterator iter = s6.begin(); iter != s6.end(); ++iter){
-					//ofile << *iter << endl;
-				}
-			}
-			*/
-			
 			for(set<string>:: iterator itr = s1.begin(); itr != s1.end(); ++itr){
 				
 				map<string, set<string> >::iterator it = allMajors.find(*itr);
