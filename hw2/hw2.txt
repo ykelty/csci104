@@ -1,0 +1,36 @@
+Problem 1
+a) Unmodified
+b) README.md is Modified and fun_problem.txt is Untracked
+c) They are both staged
+d) They are both modified
+e) README.md is staged, funproblems.txt are untracked and the contents say "So far, so good"
+f) The status of "Markdown is too easy" is staged because it was added 
+but the status of "Fancy git move" is modified because it was just changed
+
+
+
+Problem 2
+a) Every action line in a makefile must start with a TAB
+b) For "make clean", the destructors for shape1 and shape2 both get called. 
+	For "make shape1", it compiles both shape1.o and shape.o.
+c) The purpose of .PHONY is to say that the target is not a file.
+d) Makefile and makefile are both acceptable names for a makefile.
+
+
+
+Problem 3
+
+1) a list of strings. It needs to be kept in chronological order
+	 so it should be a list, and it'll store strings because it'll be the names of the teams.
+2) a set of ints. There is no order and only one piece of data that we are storing so we will
+	use a set. Also each value needs to be unique for efficient look up.
+3) a map of strings as keys and sets of strings as values (map<string, set<string>>). We use a map
+	because we need to map one set of values to another set of values and store them together.
+4) a map of strings as keys and sets of ints as values (map<string, set<int>>). We need to map each
+	state to a set of zipcodes.
+5) a map of strings as keys and list of strings as values (map<string, list<string>>). We need to map
+	each person to the list of donuts they want. We use a list instead of a set because we want to know
+	how many of each type of donut a person gets.
+
+
+
