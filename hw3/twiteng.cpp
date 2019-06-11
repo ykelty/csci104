@@ -15,7 +15,12 @@ TwitEng::TwitEng(){
 
 }
 
+TwitEng::~TwitEng()
+{
+
+}
 bool TwitEng::parse(char* filename){
+	
 	ifstream ifile;
 	ifile.open(filename);
 	if(ifile.fail()){
@@ -28,7 +33,8 @@ bool TwitEng::parse(char* filename){
 	string username;
 	while(getline(ifile, line)){
 		if(lineNumber == 0){
-			numUsers = std::stoi(line);
+			stringstream ss1(line);
+			ss1 >> numUsers;
 		}else if(lineNumber<=numUsers && lineNumber >0){
 			stringstream ss(line);
 			ss >> username;
@@ -57,12 +63,26 @@ bool TwitEng::parse(char* filename){
 			getline(ss, minute, ':');
 			getline(ss, second, ':');
 
-			int newYear = stoi(year);
-			int newMonth = stoi(month);
-			int newDay = stoi(day);
-			int newHour = stoi(hour);
-			int newMin = stoi(minute);
-			int newSec = stoi(second);
+			int newYear;
+			int newMonth;
+			int newDay;
+			int newHour;
+			int newMin;
+			int newSec;
+
+
+			stringstream ss2(year);
+			ss2 >> newYear;
+			stringstream ss3(month);
+			ss3 >> newMonth;
+			stringstream ss4(day);
+			ss4 >> newDay;
+			stringstream ss5(hour);
+			ss5 >> newHour;
+			stringstream ss6(minute);
+			ss6 >> newMin;
+			stringstream ss7(second);
+			ss7 >> newSec;
 			DateTime* d = new DateTime(newHour, newMin, newSec, newYear, newMonth, newDay);
 			
 			ss >> word;
@@ -191,8 +211,7 @@ void TwitEng::addTweet(const std::string& username, const DateTime& time, const 
  	for(set<User*>::iterator it=users.begin(); it != users.end(); ++it){
 		ofstream ofile;
 		string outputName = (*it)->name();
-		outputName += ".feed";
-		ofile.open(outputName);
+		ofile.open("feed");
 		ofile << (*it)->name()<< endl;
 		list<Tweet*> userTweets = (*it)->tweets();
 		for(list<Tweet*>::iterator itr= userTweets.begin(); itr!= userTweets.end(); ++itr){
