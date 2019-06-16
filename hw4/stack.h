@@ -71,6 +71,10 @@ void Stack<T>::pop(){
 
 template<class T>
 T const & Stack<T>::top() const{
-	return arr[topArray];
+	if(empty()){
+		return;
+	}else{
+		return arr[topArray];
+	}
 }
 #endif
