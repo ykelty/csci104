@@ -1,4 +1,4 @@
-all: tests laundry
+all: tests laundry remdup
 
 tests: FORCE deque_test
 	valgrind --leak-check=yes ./deque_test
