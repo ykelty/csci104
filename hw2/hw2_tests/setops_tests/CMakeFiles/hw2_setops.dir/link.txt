@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhw2_setops.a  CMakeFiles/hw2_setops.dir/home/cs104/hw-ykelty/hw2/setops.cpp.o
+/usr/bin/ranlib libhw2_setops.a

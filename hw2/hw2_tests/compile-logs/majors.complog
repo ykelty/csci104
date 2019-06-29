@@ -1,0 +1,5 @@
+Scanning dependencies of target hw2_majors
+[ 33%] Building CXX object majors_tests/CMakeFiles/hw2_majors.dir/home/cs104/hw-ykelty/hw2/majors.cpp.o
+[ 66%] Building CXX object majors_tests/CMakeFiles/hw2_majors.dir/home/cs104/hw-ykelty/hw2/setops.cpp.o
+[100%] Linking CXX executable hw2_majors
+[100%] Built target hw2_majors

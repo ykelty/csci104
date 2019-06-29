@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests.cpp
+setops.h
+-
+gtest/gtest.h
+-
+random_generator.h
+-
+iostream
+-
+fstream
+-
+algorithm
+-
+string
+-
+
+/home/cs104/hw-ykelty/hw2/setops.h
+iostream
+-
+set
+-
+
+testing_utils/./random_generator.h
+random
+-
+vector
+-
+set
+-
+string
+-
+cstdint
+-
+

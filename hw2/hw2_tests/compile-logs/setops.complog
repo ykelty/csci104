@@ -1,0 +1,4 @@
+Scanning dependencies of target hw2_setops
+[ 50%] Building CXX object setops_tests/CMakeFiles/hw2_setops.dir/home/cs104/hw-ykelty/hw2/setops.cpp.o
+[100%] Linking CXX static library libhw2_setops.a
+[100%] Built target hw2_setops

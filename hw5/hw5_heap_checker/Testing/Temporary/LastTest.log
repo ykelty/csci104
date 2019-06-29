@@ -1,0 +1,339 @@
+Start testing: Jun 28 20:50 PDT
+----------------------------------------------------------
+1/21 Testing: HeapTest.ConstructionDestruction
+1/21 Test: HeapTest.ConstructionDestruction
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.ConstructionDestruction"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.ConstructionDestruction" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.ConstructionDestruction" end time: Jun 28 20:50 PDT
+"HeapTest.ConstructionDestruction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/21 Testing: HeapTest.InitiallyEmpty
+2/21 Test: HeapTest.InitiallyEmpty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.InitiallyEmpty"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.InitiallyEmpty" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.InitiallyEmpty" end time: Jun 28 20:50 PDT
+"HeapTest.InitiallyEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/21 Testing: HeapTest.EmptyTopException
+3/21 Test: HeapTest.EmptyTopException
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.EmptyTopException"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.EmptyTopException" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.EmptyTopException" end time: Jun 28 20:50 PDT
+"HeapTest.EmptyTopException" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/21 Testing: HeapTest.EmptyPopException
+4/21 Test: HeapTest.EmptyPopException
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.EmptyPopException"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.EmptyPopException" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.EmptyPopException" end time: Jun 28 20:50 PDT
+"HeapTest.EmptyPopException" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/21 Testing: HeapTest.SingleItemNonempty
+5/21 Test: HeapTest.SingleItemNonempty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemNonempty"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.SingleItemNonempty" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.SingleItemNonempty" end time: Jun 28 20:50 PDT
+"HeapTest.SingleItemNonempty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/21 Testing: HeapTest.SingleItemPush
+6/21 Test: HeapTest.SingleItemPush
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemPush"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.SingleItemPush" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.SingleItemPush" end time: Jun 28 20:50 PDT
+"HeapTest.SingleItemPush" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/21 Testing: HeapTest.SingleItemPushPop
+7/21 Test: HeapTest.SingleItemPushPop
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemPushPop"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.SingleItemPushPop" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.SingleItemPushPop" end time: Jun 28 20:50 PDT
+"HeapTest.SingleItemPushPop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/21 Testing: HeapTest.TwoElementPush_LowPriFirst
+8/21 Test: HeapTest.TwoElementPush_LowPriFirst
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.TwoElementPush_LowPriFirst"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.TwoElementPush_LowPriFirst" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.TwoElementPush_LowPriFirst" end time: Jun 28 20:50 PDT
+"HeapTest.TwoElementPush_LowPriFirst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/21 Testing: HeapTest.TwoElementPush_HighPriFirst
+9/21 Test: HeapTest.TwoElementPush_HighPriFirst
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.TwoElementPush_HighPriFirst"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.TwoElementPush_HighPriFirst" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.TwoElementPush_HighPriFirst" end time: Jun 28 20:50 PDT
+"HeapTest.TwoElementPush_HighPriFirst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/21 Testing: HeapTest.Duplicates
+10/21 Test: HeapTest.Duplicates
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.Duplicates"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.Duplicates" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.Duplicates" end time: Jun 28 20:50 PDT
+"HeapTest.Duplicates" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/21 Testing: HeapTest.NegativeElements
+11/21 Test: HeapTest.NegativeElements
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.NegativeElements"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.NegativeElements" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.NegativeElements" end time: Jun 28 20:50 PDT
+"HeapTest.NegativeElements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/21 Testing: HeapTest.ThreeElementPush_0_5_10
+12/21 Test: HeapTest.ThreeElementPush_0_5_10
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_0_5_10"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.ThreeElementPush_0_5_10" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.ThreeElementPush_0_5_10" end time: Jun 28 20:50 PDT
+"HeapTest.ThreeElementPush_0_5_10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/21 Testing: HeapTest.ThreeElementPush_0_10_5
+13/21 Test: HeapTest.ThreeElementPush_0_10_5
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_0_10_5"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.ThreeElementPush_0_10_5" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.ThreeElementPush_0_10_5" end time: Jun 28 20:50 PDT
+"HeapTest.ThreeElementPush_0_10_5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/21 Testing: HeapTest.ThreeElementPush_5_0_10
+14/21 Test: HeapTest.ThreeElementPush_5_0_10
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_5_0_10"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.ThreeElementPush_5_0_10" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.ThreeElementPush_5_0_10" end time: Jun 28 20:50 PDT
+"HeapTest.ThreeElementPush_5_0_10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/21 Testing: HeapTest.ThreeElementPush_5_10_0
+15/21 Test: HeapTest.ThreeElementPush_5_10_0
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_5_10_0"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.ThreeElementPush_5_10_0" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.ThreeElementPush_5_10_0" end time: Jun 28 20:50 PDT
+"HeapTest.ThreeElementPush_5_10_0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/21 Testing: HeapTest.ThreeElementPush_10_0_5
+16/21 Test: HeapTest.ThreeElementPush_10_0_5
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_10_0_5"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.ThreeElementPush_10_0_5" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.ThreeElementPush_10_0_5" end time: Jun 28 20:50 PDT
+"HeapTest.ThreeElementPush_10_0_5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/21 Testing: HeapTest.ThreeElementPush_10_5_0
+17/21 Test: HeapTest.ThreeElementPush_10_5_0
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_10_5_0"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.ThreeElementPush_10_5_0" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.ThreeElementPush_10_5_0" end time: Jun 28 20:50 PDT
+"HeapTest.ThreeElementPush_10_5_0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/21 Testing: HeapTest.GreaterComparator
+18/21 Test: HeapTest.GreaterComparator
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.GreaterComparator"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.GreaterComparator" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.GreaterComparator" end time: Jun 28 20:50 PDT
+"HeapTest.GreaterComparator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/21 Testing: HeapTest.StringStorage
+19/21 Test: HeapTest.StringStorage
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.StringStorage"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.StringStorage" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.StringStorage" end time: Jun 28 20:50 PDT
+"HeapTest.StringStorage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/21 Testing: HeapTest.FiveElementPush_TrinaryHeap
+20/21 Test: HeapTest.FiveElementPush_TrinaryHeap
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapTest.FiveElementPush_TrinaryHeap"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapTest.FiveElementPush_TrinaryHeap" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"HeapTest.FiveElementPush_TrinaryHeap" end time: Jun 28 20:50 PDT
+"HeapTest.FiveElementPush_TrinaryHeap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/21 Testing: HeapStress.50x50RandomElements_QuaternaryHeap
+21/21 Test: HeapStress.50x50RandomElements_QuaternaryHeap
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "--error-exitcode=113" "/home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_QuaternaryHeap"
+Directory: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests
+"HeapStress.50x50RandomElements_QuaternaryHeap" start time: Jun 28 20:50 PDT
+Output:
+----------------------------------------------------------
+valgrind: /home/cs104/hw-ykelty/hw5/hw5_heap_checker/heap_tests/heap_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HeapStress.50x50RandomElements_QuaternaryHeap" end time: Jun 28 20:50 PDT
+"HeapStress.50x50RandomElements_QuaternaryHeap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 28 20:50 PDT

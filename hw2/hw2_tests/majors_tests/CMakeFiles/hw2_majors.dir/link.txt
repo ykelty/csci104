@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g3 -O0   CMakeFiles/hw2_majors.dir/home/cs104/hw-ykelty/hw2/majors.cpp.o CMakeFiles/hw2_majors.dir/home/cs104/hw-ykelty/hw2/setops.cpp.o  -o hw2_majors 

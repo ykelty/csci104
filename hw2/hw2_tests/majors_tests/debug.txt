@@ -1,0 +1,36 @@
+start reading in from expected output
+reading in from expected output : ee
+reading in from expected output : Mark W. Redekopp
+reading in from expected output : 
+reading in from expected output : ceCs
+reading in from expected output : Mark W. Redekopp
+reading in from expected output : 
+reading in from expected output : biSC
+reading in from expected output : CS Minorville
+reading in from expected output : Mark W. Redekopp
+reading in from expected output : 
+reading in from expected output : math
+reading in from expected output : 
+reading in from expected output : CSCI
+reading in from expected output : Alan Turing
+reading in from expected output : Mark W. Redekopp
+Size of expected: 9
+Size of actual: 7
+contents of expected
+
+Alan Turing
+CS Minorville
+CSCI
+Mark W. Redekopp
+biSC
+ceCs
+ee
+math
+contents of actual
+
+  Mark W. Redekopp		
+BIS
+CECS
+CSC
+E
+MAT

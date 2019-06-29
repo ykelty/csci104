@@ -25,15 +25,19 @@ Handler* createHandlers()
 
 int main(int argc, char* argv[])
 {
+  
   if(argc < 2){
     cerr << "Please provide the twitter data file" << endl;
     return 1;
   }
+
   TwitEng twit;
+  
   if ( twit.parse(argv[1]) ){
     cerr << "Unable to parse " << argv[1] << endl;
     return 1;
   }
+  
 
   // Initialize command handlers
   Handler* handlers = createHandlers();
@@ -63,5 +67,6 @@ int main(int argc, char* argv[])
     }
   }
   delete handlers;
+  
   return 0;
 }

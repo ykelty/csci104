@@ -4,6 +4,8 @@
 #include <vector>
 #include "user.h"
 
+#include <iostream>
+
 
 using namespace std;
 
@@ -50,11 +52,18 @@ void User::addTweet(Tweet* t){
 
 vector<Tweet*> User::getFeed(){
 	vector<Tweet*> feed;
+
 	for(set<User*>::iterator itr= followingUsers.begin(); itr != followingUsers.end(); ++itr){
-		tweetsList = (*itr)->tweets();
-		for(list<Tweet*>::iterator it= tweetsList.begin(); it != tweetsList.end(); ++it){
+		list<Tweet*> ftweets = (*itr)->tweets();
+
+		for(list<Tweet*>::iterator it= ftweets.begin(); it != ftweets.end(); ++it){
+			//cout << *it << endl;
 			feed.push_back(*it);
 		}
+	}
+	for(list<Tweet*>::iterator itr = tweetsList.begin(); itr != tweetsList.end(); ++itr){
+		//cout << *itr << endl;
+		feed.push_back(*itr);
 	}
 	
 	return feed;

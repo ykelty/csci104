@@ -1,0 +1,43 @@
+HeapTest.ConstructionDestruction 0 0
+HeapTest.InitiallyEmpty 0 0
+HeapTest.EmptyTopException 0 0
+HeapTest.EmptyPopException 0 0
+HeapTest.SingleItemNonempty 0 0
+HeapTest.SingleItemPush 0 0
+HeapTest.SingleItemPushPop 0 0
+HeapTest.TwoElementPush_LowPriFirst 0 0
+HeapTest.TwoElementPush_HighPriFirst 0 0
+HeapTest.Duplicates 0 0
+HeapTest.NegativeElements 0 0
+HeapTest.ThreeElementPush_0_5_10 0 0
+HeapTest.ThreeElementPush_0_10_5 0 0
+HeapTest.ThreeElementPush_5_0_10 0 0
+HeapTest.ThreeElementPush_5_10_0 0 0
+HeapTest.ThreeElementPush_10_0_5 0 0
+HeapTest.ThreeElementPush_10_5_0 0 0
+HeapTest.GreaterComparator 0 0
+HeapTest.StringStorage 0 0
+HeapTest.FiveElementPush_TrinaryHeap 0 0
+HeapStress.50x50RandomElements_QuaternaryHeap 0 0
+---
+HeapTest.ConstructionDestruction
+HeapTest.InitiallyEmpty
+HeapTest.EmptyTopException
+HeapTest.EmptyPopException
+HeapTest.SingleItemNonempty
+HeapTest.SingleItemPush
+HeapTest.SingleItemPushPop
+HeapTest.TwoElementPush_LowPriFirst
+HeapTest.TwoElementPush_HighPriFirst
+HeapTest.Duplicates
+HeapTest.NegativeElements
+HeapTest.ThreeElementPush_0_5_10
+HeapTest.ThreeElementPush_0_10_5
+HeapTest.ThreeElementPush_5_0_10
+HeapTest.ThreeElementPush_5_10_0
+HeapTest.ThreeElementPush_10_0_5
+HeapTest.ThreeElementPush_10_5_0
+HeapTest.GreaterComparator
+HeapTest.StringStorage
+HeapTest.FiveElementPush_TrinaryHeap
+HeapStress.50x50RandomElements_QuaternaryHeap

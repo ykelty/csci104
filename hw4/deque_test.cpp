@@ -70,11 +70,4 @@ TEST(DequeTest, pushback) {
 
 
 }
-/*
-TEST_F(DequeTest, size) {
 
-	d(6);
-	EXPECT_EQ(6, d.size());
-
-}
-*/

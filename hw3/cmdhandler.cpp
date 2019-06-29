@@ -1,7 +1,10 @@
 #include "cmdhandler.h"
 #include "util.h"
+#include <vector>
 using namespace std;
 
+
+//QUIT HANDLER
 QuitHandler::QuitHandler()
 {
 
@@ -21,21 +24,18 @@ bool QuitHandler::canHandle(const std::string& cmd) const
 
 Handler::HANDLER_STATUS_T QuitHandler::process(TwitEng* eng, std::istream& instr) const
 {
+
 	eng->dumpFeeds();
 	return HANDLER_QUIT;
 }
 
 
-
-bool AndHandler::canHandle(const std::string& cmd) const
-{
-	return cmd == "AND";
-}
-
+//AND HANDLER
 
 AndHandler::AndHandler(){
 
 }
+
 
 AndHandler::AndHandler(Handler* next)
   : Handler(next)
@@ -43,20 +43,44 @@ AndHandler::AndHandler(Handler* next)
 	
 }
 
-Handler::HANDLER_STATUS_T AndHandler::process(TwitEng* eng, std::istream& instr) const{
-	return HANDLER_QUIT;
+bool AndHandler::canHandle(const std::string& cmd) const
+{
+	return cmd == "AND";
 }
 
+Handler::HANDLER_STATUS_T AndHandler::process(TwitEng* eng, std::istream& instr) const{
+
+	vector<string> vec;
+	while(!instr.fail()){
+		string word;
+		instr >> word;
+		vec.push_back(word);
+	}
+	vector<Tweet*> newVec;
+	newVec = eng->search(vec, 0);
+	for(vector<Tweet*>::iterator it = newVec.begin(); it != newVec.end(); ++it){
+		cout << **it << endl;
+	}
+	
+	return HANDLER_OK;
+}
+
+
+
+
+//OR HANDLER
+
+OrHandler::OrHandler()
+{
+	
+}
 
 bool OrHandler::canHandle(const std::string& cmd) const
 {
 	return cmd == "OR";
 }
 
-OrHandler::OrHandler()
-{
-	
-}
+
 OrHandler::OrHandler(Handler* next)
    : Handler(next)
 {
@@ -64,10 +88,23 @@ OrHandler::OrHandler(Handler* next)
 }
 
 Handler::HANDLER_STATUS_T OrHandler::process(TwitEng* eng, std::istream& instr) const{
-	return HANDLER_QUIT;
+	vector<string> vec;
+	while(!instr.fail()){
+		string word;
+		instr >> word;
+		vec.push_back(word);
+	}
+	vector<Tweet*> newVec;
+	newVec = eng->search(vec, 1);
+	for(vector<Tweet*>::iterator it = newVec.begin(); it != newVec.end(); ++it){
+		cout << **it << endl;
+	}
+
+	return HANDLER_OK;
 }
 
 
+//TWEET HANDLER
 
 TweetHandler::TweetHandler()
 {
@@ -86,5 +123,6 @@ bool TweetHandler::canHandle(const std::string& cmd) const
 }
 
 Handler::HANDLER_STATUS_T TweetHandler::process(TwitEng* eng, std::istream& instr) const{
-	return HANDLER_QUIT;
+	eng->dumpFeeds();
+	return HANDLER_OK;
 }

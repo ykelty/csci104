@@ -1,6 +1,7 @@
 #ifndef SETOPS_H
 #define SETOPS_H
 #include <iostream>
+#include <set>
 
 
 

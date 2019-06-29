@@ -1,0 +1,1951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20190626-0137-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.5.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="studentVM"
+	OSRelease="4.4.0-104-generic"
+	OSVersion="#127-Ubuntu SMP Mon Dec 11 12:16:42 UTC 2017"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="61"
+	ProcessorCacheSize="3072"
+	NumberOfLogicalCPU="2"
+	NumberOfPhysicalCPU="1"
+	TotalVirtualMemory="2045"
+	TotalPhysicalMemory="2000"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1600"
+	>
+	<Testing>
+		<StartDateTime>Jun 25 18:37 PDT</StartDateTime>
+		<StartTestTime>1561513048</StartTestTime>
+		<TestList>
+			<Test>./setops_tests/SetOpsTestIntersection.TwoEmptySets</Test>
+			<Test>./setops_tests/SetOpsTestIntersection.FirstSetEmpty</Test>
+			<Test>./setops_tests/SetOpsTestIntersection.SecondSetEmpty</Test>
+			<Test>./setops_tests/SetOpsTestIntersection.NonIntersectingSets</Test>
+			<Test>./setops_tests/SetOpsTestIntersection.PartiallyIntersectingSets</Test>
+			<Test>./setops_tests/SetOpsTestIntersection.IdenticalNonEmptySets</Test>
+			<Test>./setops_tests/SetOpsTestUnion.TwoEmptySets</Test>
+			<Test>./setops_tests/SetOpsTestUnion.FirstSetEmpty</Test>
+			<Test>./setops_tests/SetOpsTestUnion.SecondSetEmpty</Test>
+			<Test>./setops_tests/SetOpsTestUnion.NoElementsInCommon</Test>
+			<Test>./setops_tests/SetOpsTestUnion.SomeElementsInCommon</Test>
+			<Test>./setops_tests/SetOpsTestUnion.IdenticalNonEmptySets</Test>
+			<Test>./setops_tests/SetOpsTestDifference.TwoEmptySets</Test>
+			<Test>./setops_tests/SetOpsTestDifference.FirstSetEmpty</Test>
+			<Test>./setops_tests/SetOpsTestDifference.SecondSetEmpty</Test>
+			<Test>./setops_tests/SetOpsTestDifference.IdenticalNonEmptySets</Test>
+			<Test>./setops_tests/SetOpsTestDifference.FirstSubsetOfSecond</Test>
+			<Test>./setops_tests/SetOpsTestDifference.SecondSubsetOfFirst</Test>
+			<Test>./setops_tests/SetOpsTestDifference.NoElementsInCommon</Test>
+			<Test>./setops_tests/SetOpsRuntime.Intersection</Test>
+			<Test>./setops_tests/SetOpsRuntime.Union</Test>
+			<Test>./setops_tests/SetOpsRuntime.Difference</Test>
+			<Test>./majors_tests/SimpleInput.Normal</Test>
+			<Test>./majors_tests/SimpleInput.SingleSpace</Test>
+			<Test>./majors_tests/SimpleInput.SingleTab</Test>
+			<Test>./majors_tests/SimpleInput.CaseInsensitive</Test>
+			<Test>./majors_tests/SimpleInput.MultiMajorSingleLine</Test>
+			<Test>./majors_tests/SimpleInput.MultiMajorMultiLine</Test>
+			<Test>./majors_tests/SimpleInput.NoStudentsInMajors</Test>
+			<Test>./majors_tests/ModerateInput.MultiSpace</Test>
+			<Test>./majors_tests/ModerateInput.MultiTab</Test>
+			<Test>./majors_tests/ModerateInput.MultiSpaceCaseInsensitive</Test>
+			<Test>./majors_tests/ModerateInput.MultiTabCaseInsensitive</Test>
+			<Test>./majors_tests/ComplexInput.MultiSpaceTabCaseInsensitive</Test>
+			<Test>./majors_tests/ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine</Test>
+			<Test>./majors_tests/ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine</Test>
+			<Test>./majors_tests/ComplexInput.AnythingGoes1</Test>
+			<Test>./majors_tests/ComplexInput.AnythingGoes2</Test>
+			<Test>./majors_tests/NormalTest.NormalInputTest</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>SetOpsTestIntersection.TwoEmptySets</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestIntersection.TwoEmptySets</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.TwoEmptySets"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.816249</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.TwoEmptySets"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5150== Memcheck, a memory error detector
+==5150== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5150== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5150== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestIntersection.TwoEmptySets
+==5150== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestIntersection.TwoEmptySets
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestIntersection
+[ RUN      ] SetOpsTestIntersection.TwoEmptySets
+[       OK ] SetOpsTestIntersection.TwoEmptySets (11 ms)
+[----------] 1 test from SetOpsTestIntersection (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (53 ms total)
+[  PASSED  ] 1 test.
+==5150== 
+==5150== HEAP SUMMARY:
+==5150==     in use at exit: 72,704 bytes in 1 blocks
+==5150==   total heap usage: 473 allocs, 472 frees, 132,368 bytes allocated
+==5150== 
+==5150== LEAK SUMMARY:
+==5150==    definitely lost: 0 bytes in 0 blocks
+==5150==    indirectly lost: 0 bytes in 0 blocks
+==5150==      possibly lost: 0 bytes in 0 blocks
+==5150==    still reachable: 0 bytes in 0 blocks
+==5150==         suppressed: 72,704 bytes in 1 blocks
+==5150== 
+==5150== For counts of detected and suppressed errors, rerun with: -v
+==5150== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestIntersection.FirstSetEmpty</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestIntersection.FirstSetEmpty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.FirstSetEmpty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.813948</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.FirstSetEmpty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5151== Memcheck, a memory error detector
+==5151== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5151== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5151== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestIntersection.FirstSetEmpty
+==5151== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestIntersection.FirstSetEmpty
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestIntersection
+[ RUN      ] SetOpsTestIntersection.FirstSetEmpty
+[       OK ] SetOpsTestIntersection.FirstSetEmpty (27 ms)
+[----------] 1 test from SetOpsTestIntersection (34 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (64 ms total)
+[  PASSED  ] 1 test.
+==5151== 
+==5151== HEAP SUMMARY:
+==5151==     in use at exit: 72,704 bytes in 1 blocks
+==5151==   total heap usage: 476 allocs, 475 frees, 132,588 bytes allocated
+==5151== 
+==5151== LEAK SUMMARY:
+==5151==    definitely lost: 0 bytes in 0 blocks
+==5151==    indirectly lost: 0 bytes in 0 blocks
+==5151==      possibly lost: 0 bytes in 0 blocks
+==5151==    still reachable: 0 bytes in 0 blocks
+==5151==         suppressed: 72,704 bytes in 1 blocks
+==5151== 
+==5151== For counts of detected and suppressed errors, rerun with: -v
+==5151== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestIntersection.SecondSetEmpty</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestIntersection.SecondSetEmpty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.SecondSetEmpty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.819217</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.SecondSetEmpty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5152== Memcheck, a memory error detector
+==5152== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5152== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5152== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestIntersection.SecondSetEmpty
+==5152== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestIntersection.SecondSetEmpty
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestIntersection
+[ RUN      ] SetOpsTestIntersection.SecondSetEmpty
+[       OK ] SetOpsTestIntersection.SecondSetEmpty (31 ms)
+[----------] 1 test from SetOpsTestIntersection (37 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (67 ms total)
+[  PASSED  ] 1 test.
+==5152== 
+==5152== HEAP SUMMARY:
+==5152==     in use at exit: 72,704 bytes in 1 blocks
+==5152==   total heap usage: 476 allocs, 475 frees, 132,616 bytes allocated
+==5152== 
+==5152== LEAK SUMMARY:
+==5152==    definitely lost: 0 bytes in 0 blocks
+==5152==    indirectly lost: 0 bytes in 0 blocks
+==5152==      possibly lost: 0 bytes in 0 blocks
+==5152==    still reachable: 0 bytes in 0 blocks
+==5152==         suppressed: 72,704 bytes in 1 blocks
+==5152== 
+==5152== For counts of detected and suppressed errors, rerun with: -v
+==5152== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestIntersection.NonIntersectingSets</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestIntersection.NonIntersectingSets</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.NonIntersectingSets"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.847513</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.NonIntersectingSets"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5153== Memcheck, a memory error detector
+==5153== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5153== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5153== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestIntersection.NonIntersectingSets
+==5153== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestIntersection.NonIntersectingSets
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestIntersection
+[ RUN      ] SetOpsTestIntersection.NonIntersectingSets
+[       OK ] SetOpsTestIntersection.NonIntersectingSets (33 ms)
+[----------] 1 test from SetOpsTestIntersection (39 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (91 ms total)
+[  PASSED  ] 1 test.
+==5153== 
+==5153== HEAP SUMMARY:
+==5153==     in use at exit: 72,704 bytes in 1 blocks
+==5153==   total heap usage: 479 allocs, 478 frees, 132,948 bytes allocated
+==5153== 
+==5153== LEAK SUMMARY:
+==5153==    definitely lost: 0 bytes in 0 blocks
+==5153==    indirectly lost: 0 bytes in 0 blocks
+==5153==      possibly lost: 0 bytes in 0 blocks
+==5153==    still reachable: 0 bytes in 0 blocks
+==5153==         suppressed: 72,704 bytes in 1 blocks
+==5153== 
+==5153== For counts of detected and suppressed errors, rerun with: -v
+==5153== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestIntersection.PartiallyIntersectingSets</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestIntersection.PartiallyIntersectingSets</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.PartiallyIntersectingSets"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.867568</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.PartiallyIntersectingSets"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5154== Memcheck, a memory error detector
+==5154== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5154== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5154== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestIntersection.PartiallyIntersectingSets
+==5154== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestIntersection.PartiallyIntersectingSets
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestIntersection
+[ RUN      ] SetOpsTestIntersection.PartiallyIntersectingSets
+[       OK ] SetOpsTestIntersection.PartiallyIntersectingSets (41 ms)
+[----------] 1 test from SetOpsTestIntersection (48 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (78 ms total)
+[  PASSED  ] 1 test.
+==5154== 
+==5154== HEAP SUMMARY:
+==5154==     in use at exit: 72,704 bytes in 1 blocks
+==5154==   total heap usage: 485 allocs, 484 frees, 133,500 bytes allocated
+==5154== 
+==5154== LEAK SUMMARY:
+==5154==    definitely lost: 0 bytes in 0 blocks
+==5154==    indirectly lost: 0 bytes in 0 blocks
+==5154==      possibly lost: 0 bytes in 0 blocks
+==5154==    still reachable: 0 bytes in 0 blocks
+==5154==         suppressed: 72,704 bytes in 1 blocks
+==5154== 
+==5154== For counts of detected and suppressed errors, rerun with: -v
+==5154== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestIntersection.IdenticalNonEmptySets</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestIntersection.IdenticalNonEmptySets</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.IdenticalNonEmptySets"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.891847</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestIntersection.IdenticalNonEmptySets"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5155== Memcheck, a memory error detector
+==5155== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5155== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5155== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestIntersection.IdenticalNonEmptySets
+==5155== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestIntersection.IdenticalNonEmptySets
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestIntersection
+[ RUN      ] SetOpsTestIntersection.IdenticalNonEmptySets
+[       OK ] SetOpsTestIntersection.IdenticalNonEmptySets (58 ms)
+[----------] 1 test from SetOpsTestIntersection (65 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (100 ms total)
+[  PASSED  ] 1 test.
+==5155== 
+==5155== HEAP SUMMARY:
+==5155==     in use at exit: 72,704 bytes in 1 blocks
+==5155==   total heap usage: 510 allocs, 509 frees, 134,260 bytes allocated
+==5155== 
+==5155== LEAK SUMMARY:
+==5155==    definitely lost: 0 bytes in 0 blocks
+==5155==    indirectly lost: 0 bytes in 0 blocks
+==5155==      possibly lost: 0 bytes in 0 blocks
+==5155==    still reachable: 0 bytes in 0 blocks
+==5155==         suppressed: 72,704 bytes in 1 blocks
+==5155== 
+==5155== For counts of detected and suppressed errors, rerun with: -v
+==5155== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestUnion.TwoEmptySets</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestUnion.TwoEmptySets</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.TwoEmptySets"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.831354</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.TwoEmptySets"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5156== Memcheck, a memory error detector
+==5156== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5156== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5156== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestUnion.TwoEmptySets
+==5156== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestUnion.TwoEmptySets
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestUnion
+[ RUN      ] SetOpsTestUnion.TwoEmptySets
+[       OK ] SetOpsTestUnion.TwoEmptySets (12 ms)
+[----------] 1 test from SetOpsTestUnion (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (49 ms total)
+[  PASSED  ] 1 test.
+==5156== 
+==5156== HEAP SUMMARY:
+==5156==     in use at exit: 72,704 bytes in 1 blocks
+==5156==   total heap usage: 473 allocs, 472 frees, 132,214 bytes allocated
+==5156== 
+==5156== LEAK SUMMARY:
+==5156==    definitely lost: 0 bytes in 0 blocks
+==5156==    indirectly lost: 0 bytes in 0 blocks
+==5156==      possibly lost: 0 bytes in 0 blocks
+==5156==    still reachable: 0 bytes in 0 blocks
+==5156==         suppressed: 72,704 bytes in 1 blocks
+==5156== 
+==5156== For counts of detected and suppressed errors, rerun with: -v
+==5156== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestUnion.FirstSetEmpty</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestUnion.FirstSetEmpty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.FirstSetEmpty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.85239</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.FirstSetEmpty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5157== Memcheck, a memory error detector
+==5157== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5157== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5157== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestUnion.FirstSetEmpty
+==5157== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestUnion.FirstSetEmpty
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestUnion
+[ RUN      ] SetOpsTestUnion.FirstSetEmpty
+[       OK ] SetOpsTestUnion.FirstSetEmpty (39 ms)
+[----------] 1 test from SetOpsTestUnion (47 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (78 ms total)
+[  PASSED  ] 1 test.
+==5157== 
+==5157== HEAP SUMMARY:
+==5157==     in use at exit: 72,704 bytes in 1 blocks
+==5157==   total heap usage: 479 allocs, 478 frees, 132,605 bytes allocated
+==5157== 
+==5157== LEAK SUMMARY:
+==5157==    definitely lost: 0 bytes in 0 blocks
+==5157==    indirectly lost: 0 bytes in 0 blocks
+==5157==      possibly lost: 0 bytes in 0 blocks
+==5157==    still reachable: 0 bytes in 0 blocks
+==5157==         suppressed: 72,704 bytes in 1 blocks
+==5157== 
+==5157== For counts of detected and suppressed errors, rerun with: -v
+==5157== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestUnion.SecondSetEmpty</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestUnion.SecondSetEmpty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.SecondSetEmpty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.857446</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.SecondSetEmpty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5158== Memcheck, a memory error detector
+==5158== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5158== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5158== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestUnion.SecondSetEmpty
+==5158== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestUnion.SecondSetEmpty
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestUnion
+[ RUN      ] SetOpsTestUnion.SecondSetEmpty
+[       OK ] SetOpsTestUnion.SecondSetEmpty (38 ms)
+[----------] 1 test from SetOpsTestUnion (47 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (79 ms total)
+[  PASSED  ] 1 test.
+==5158== 
+==5158== HEAP SUMMARY:
+==5158==     in use at exit: 72,704 bytes in 1 blocks
+==5158==   total heap usage: 479 allocs, 478 frees, 132,612 bytes allocated
+==5158== 
+==5158== LEAK SUMMARY:
+==5158==    definitely lost: 0 bytes in 0 blocks
+==5158==    indirectly lost: 0 bytes in 0 blocks
+==5158==      possibly lost: 0 bytes in 0 blocks
+==5158==    still reachable: 0 bytes in 0 blocks
+==5158==         suppressed: 72,704 bytes in 1 blocks
+==5158== 
+==5158== For counts of detected and suppressed errors, rerun with: -v
+==5158== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestUnion.NoElementsInCommon</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestUnion.NoElementsInCommon</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.NoElementsInCommon"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.862058</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.NoElementsInCommon"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5159== Memcheck, a memory error detector
+==5159== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5159== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5159== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestUnion.NoElementsInCommon
+==5159== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestUnion.NoElementsInCommon
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestUnion
+[ RUN      ] SetOpsTestUnion.NoElementsInCommon
+[       OK ] SetOpsTestUnion.NoElementsInCommon (51 ms)
+[----------] 1 test from SetOpsTestUnion (57 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (91 ms total)
+[  PASSED  ] 1 test.
+==5159== 
+==5159== HEAP SUMMARY:
+==5159==     in use at exit: 72,704 bytes in 1 blocks
+==5159==   total heap usage: 491 allocs, 490 frees, 133,492 bytes allocated
+==5159== 
+==5159== LEAK SUMMARY:
+==5159==    definitely lost: 0 bytes in 0 blocks
+==5159==    indirectly lost: 0 bytes in 0 blocks
+==5159==      possibly lost: 0 bytes in 0 blocks
+==5159==    still reachable: 0 bytes in 0 blocks
+==5159==         suppressed: 72,704 bytes in 1 blocks
+==5159== 
+==5159== For counts of detected and suppressed errors, rerun with: -v
+==5159== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestUnion.SomeElementsInCommon</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestUnion.SomeElementsInCommon</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.SomeElementsInCommon"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.87917</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.SomeElementsInCommon"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5160== Memcheck, a memory error detector
+==5160== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5160== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5160== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestUnion.SomeElementsInCommon
+==5160== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestUnion.SomeElementsInCommon
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestUnion
+[ RUN      ] SetOpsTestUnion.SomeElementsInCommon
+[       OK ] SetOpsTestUnion.SomeElementsInCommon (48 ms)
+[----------] 1 test from SetOpsTestUnion (54 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (85 ms total)
+[  PASSED  ] 1 test.
+==5160== 
+==5160== HEAP SUMMARY:
+==5160==     in use at exit: 72,704 bytes in 1 blocks
+==5160==   total heap usage: 493 allocs, 492 frees, 133,676 bytes allocated
+==5160== 
+==5160== LEAK SUMMARY:
+==5160==    definitely lost: 0 bytes in 0 blocks
+==5160==    indirectly lost: 0 bytes in 0 blocks
+==5160==      possibly lost: 0 bytes in 0 blocks
+==5160==    still reachable: 0 bytes in 0 blocks
+==5160==         suppressed: 72,704 bytes in 1 blocks
+==5160== 
+==5160== For counts of detected and suppressed errors, rerun with: -v
+==5160== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestUnion.IdenticalNonEmptySets</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestUnion.IdenticalNonEmptySets</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.IdenticalNonEmptySets"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.845798</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestUnion.IdenticalNonEmptySets"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5161== Memcheck, a memory error detector
+==5161== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5161== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5161== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestUnion.IdenticalNonEmptySets
+==5161== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestUnion.IdenticalNonEmptySets
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestUnion
+[ RUN      ] SetOpsTestUnion.IdenticalNonEmptySets
+[       OK ] SetOpsTestUnion.IdenticalNonEmptySets (45 ms)
+[----------] 1 test from SetOpsTestUnion (51 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (86 ms total)
+[  PASSED  ] 1 test.
+==5161== 
+==5161== HEAP SUMMARY:
+==5161==     in use at exit: 72,704 bytes in 1 blocks
+==5161==   total heap usage: 510 allocs, 509 frees, 134,064 bytes allocated
+==5161== 
+==5161== LEAK SUMMARY:
+==5161==    definitely lost: 0 bytes in 0 blocks
+==5161==    indirectly lost: 0 bytes in 0 blocks
+==5161==      possibly lost: 0 bytes in 0 blocks
+==5161==    still reachable: 0 bytes in 0 blocks
+==5161==         suppressed: 72,704 bytes in 1 blocks
+==5161== 
+==5161== For counts of detected and suppressed errors, rerun with: -v
+==5161== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestDifference.TwoEmptySets</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestDifference.TwoEmptySets</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.TwoEmptySets"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.810092</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.TwoEmptySets"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5162== Memcheck, a memory error detector
+==5162== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5162== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5162== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestDifference.TwoEmptySets
+==5162== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestDifference.TwoEmptySets
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestDifference
+[ RUN      ] SetOpsTestDifference.TwoEmptySets
+[       OK ] SetOpsTestDifference.TwoEmptySets (11 ms)
+[----------] 1 test from SetOpsTestDifference (17 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (48 ms total)
+[  PASSED  ] 1 test.
+==5162== 
+==5162== HEAP SUMMARY:
+==5162==     in use at exit: 72,704 bytes in 1 blocks
+==5162==   total heap usage: 473 allocs, 472 frees, 132,312 bytes allocated
+==5162== 
+==5162== LEAK SUMMARY:
+==5162==    definitely lost: 0 bytes in 0 blocks
+==5162==    indirectly lost: 0 bytes in 0 blocks
+==5162==      possibly lost: 0 bytes in 0 blocks
+==5162==    still reachable: 0 bytes in 0 blocks
+==5162==         suppressed: 72,704 bytes in 1 blocks
+==5162== 
+==5162== For counts of detected and suppressed errors, rerun with: -v
+==5162== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestDifference.FirstSetEmpty</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestDifference.FirstSetEmpty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.FirstSetEmpty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.831058</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.FirstSetEmpty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5163== Memcheck, a memory error detector
+==5163== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5163== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5163== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestDifference.FirstSetEmpty
+==5163== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestDifference.FirstSetEmpty
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestDifference
+[ RUN      ] SetOpsTestDifference.FirstSetEmpty
+[       OK ] SetOpsTestDifference.FirstSetEmpty (31 ms)
+[----------] 1 test from SetOpsTestDifference (38 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (68 ms total)
+[  PASSED  ] 1 test.
+==5163== 
+==5163== HEAP SUMMARY:
+==5163==     in use at exit: 72,704 bytes in 1 blocks
+==5163==   total heap usage: 476 allocs, 475 frees, 132,532 bytes allocated
+==5163== 
+==5163== LEAK SUMMARY:
+==5163==    definitely lost: 0 bytes in 0 blocks
+==5163==    indirectly lost: 0 bytes in 0 blocks
+==5163==      possibly lost: 0 bytes in 0 blocks
+==5163==    still reachable: 0 bytes in 0 blocks
+==5163==         suppressed: 72,704 bytes in 1 blocks
+==5163== 
+==5163== For counts of detected and suppressed errors, rerun with: -v
+==5163== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestDifference.SecondSetEmpty</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestDifference.SecondSetEmpty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.SecondSetEmpty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.816616</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.SecondSetEmpty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5164== Memcheck, a memory error detector
+==5164== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5164== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5164== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestDifference.SecondSetEmpty
+==5164== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestDifference.SecondSetEmpty
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestDifference
+[ RUN      ] SetOpsTestDifference.SecondSetEmpty
+[       OK ] SetOpsTestDifference.SecondSetEmpty (41 ms)
+[----------] 1 test from SetOpsTestDifference (48 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (77 ms total)
+[  PASSED  ] 1 test.
+==5164== 
+==5164== HEAP SUMMARY:
+==5164==     in use at exit: 72,704 bytes in 1 blocks
+==5164==   total heap usage: 479 allocs, 478 frees, 132,752 bytes allocated
+==5164== 
+==5164== LEAK SUMMARY:
+==5164==    definitely lost: 0 bytes in 0 blocks
+==5164==    indirectly lost: 0 bytes in 0 blocks
+==5164==      possibly lost: 0 bytes in 0 blocks
+==5164==    still reachable: 0 bytes in 0 blocks
+==5164==         suppressed: 72,704 bytes in 1 blocks
+==5164== 
+==5164== For counts of detected and suppressed errors, rerun with: -v
+==5164== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestDifference.IdenticalNonEmptySets</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestDifference.IdenticalNonEmptySets</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.IdenticalNonEmptySets"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.844825</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.IdenticalNonEmptySets"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5165== Memcheck, a memory error detector
+==5165== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5165== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5165== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestDifference.IdenticalNonEmptySets
+==5165== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestDifference.IdenticalNonEmptySets
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestDifference
+[ RUN      ] SetOpsTestDifference.IdenticalNonEmptySets
+[       OK ] SetOpsTestDifference.IdenticalNonEmptySets (51 ms)
+[----------] 1 test from SetOpsTestDifference (57 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (87 ms total)
+[  PASSED  ] 1 test.
+==5165== 
+==5165== HEAP SUMMARY:
+==5165==     in use at exit: 72,704 bytes in 1 blocks
+==5165==   total heap usage: 500 allocs, 499 frees, 133,772 bytes allocated
+==5165== 
+==5165== LEAK SUMMARY:
+==5165==    definitely lost: 0 bytes in 0 blocks
+==5165==    indirectly lost: 0 bytes in 0 blocks
+==5165==      possibly lost: 0 bytes in 0 blocks
+==5165==    still reachable: 0 bytes in 0 blocks
+==5165==         suppressed: 72,704 bytes in 1 blocks
+==5165== 
+==5165== For counts of detected and suppressed errors, rerun with: -v
+==5165== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestDifference.FirstSubsetOfSecond</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestDifference.FirstSubsetOfSecond</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.FirstSubsetOfSecond"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.892627</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.FirstSubsetOfSecond"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5166== Memcheck, a memory error detector
+==5166== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5166== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5166== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestDifference.FirstSubsetOfSecond
+==5166== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestDifference.FirstSubsetOfSecond
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestDifference
+[ RUN      ] SetOpsTestDifference.FirstSubsetOfSecond
+[       OK ] SetOpsTestDifference.FirstSubsetOfSecond (51 ms)
+[----------] 1 test from SetOpsTestDifference (57 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (97 ms total)
+[  PASSED  ] 1 test.
+==5166== 
+==5166== HEAP SUMMARY:
+==5166==     in use at exit: 72,704 bytes in 1 blocks
+==5166==   total heap usage: 483 allocs, 482 frees, 133,148 bytes allocated
+==5166== 
+==5166== LEAK SUMMARY:
+==5166==    definitely lost: 0 bytes in 0 blocks
+==5166==    indirectly lost: 0 bytes in 0 blocks
+==5166==      possibly lost: 0 bytes in 0 blocks
+==5166==    still reachable: 0 bytes in 0 blocks
+==5166==         suppressed: 72,704 bytes in 1 blocks
+==5166== 
+==5166== For counts of detected and suppressed errors, rerun with: -v
+==5166== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestDifference.SecondSubsetOfFirst</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestDifference.SecondSubsetOfFirst</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.SecondSubsetOfFirst"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.837894</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.SecondSubsetOfFirst"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5167== Memcheck, a memory error detector
+==5167== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5167== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5167== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestDifference.SecondSubsetOfFirst
+==5167== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestDifference.SecondSubsetOfFirst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestDifference
+[ RUN      ] SetOpsTestDifference.SecondSubsetOfFirst
+[       OK ] SetOpsTestDifference.SecondSubsetOfFirst (52 ms)
+[----------] 1 test from SetOpsTestDifference (59 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (88 ms total)
+[  PASSED  ] 1 test.
+==5167== 
+==5167== HEAP SUMMARY:
+==5167==     in use at exit: 72,704 bytes in 1 blocks
+==5167==   total heap usage: 491 allocs, 490 frees, 133,660 bytes allocated
+==5167== 
+==5167== LEAK SUMMARY:
+==5167==    definitely lost: 0 bytes in 0 blocks
+==5167==    indirectly lost: 0 bytes in 0 blocks
+==5167==      possibly lost: 0 bytes in 0 blocks
+==5167==    still reachable: 0 bytes in 0 blocks
+==5167==         suppressed: 72,704 bytes in 1 blocks
+==5167== 
+==5167== For counts of detected and suppressed errors, rerun with: -v
+==5167== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>SetOpsTestDifference.NoElementsInCommon</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsTestDifference.NoElementsInCommon</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.NoElementsInCommon"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.835843</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests" "--gtest_filter=SetOpsTestDifference.NoElementsInCommon"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==5168== Memcheck, a memory error detector
+==5168== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5168== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5168== Command: /home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_tests --gtest_filter=SetOpsTestDifference.NoElementsInCommon
+==5168== 
+Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsTestDifference.NoElementsInCommon
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsTestDifference
+[ RUN      ] SetOpsTestDifference.NoElementsInCommon
+[       OK ] SetOpsTestDifference.NoElementsInCommon (41 ms)
+[----------] 1 test from SetOpsTestDifference (47 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (79 ms total)
+[  PASSED  ] 1 test.
+==5168== 
+==5168== HEAP SUMMARY:
+==5168==     in use at exit: 72,704 bytes in 1 blocks
+==5168==   total heap usage: 482 allocs, 481 frees, 133,056 bytes allocated
+==5168== 
+==5168== LEAK SUMMARY:
+==5168==    definitely lost: 0 bytes in 0 blocks
+==5168==    indirectly lost: 0 bytes in 0 blocks
+==5168==      possibly lost: 0 bytes in 0 blocks
+==5168==    still reachable: 0 bytes in 0 blocks
+==5168==         suppressed: 72,704 bytes in 1 blocks
+==5168== 
+==5168== For counts of detected and suppressed errors, rerun with: -v
+==5168== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SetOpsRuntime.Intersection</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsRuntime.Intersection</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_runtime_tests "--gtest_filter=SetOpsRuntime.Intersection"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Timeout</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>30.0061</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_runtime_tests "--gtest_filter=SetOpsRuntime.Intersection"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsRuntime.Intersection
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsRuntime
+[ RUN      ] SetOpsRuntime.Intersection
+&gt;&gt; Evaluating runtime of Intersection
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SetOpsRuntime.Union</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsRuntime.Union</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_runtime_tests "--gtest_filter=SetOpsRuntime.Union"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Timeout</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>30.0049</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_runtime_tests "--gtest_filter=SetOpsRuntime.Union"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsRuntime.Union
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsRuntime
+[ RUN      ] SetOpsRuntime.Union
+&gt;&gt; Evaluating runtime of Union
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SetOpsRuntime.Difference</Name>
+			<Path>./setops_tests</Path>
+			<FullName>./setops_tests/SetOpsRuntime.Difference</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_runtime_tests "--gtest_filter=SetOpsRuntime.Difference"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Timeout</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>30.0074</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/setops_tests/setops_runtime_tests "--gtest_filter=SetOpsRuntime.Difference"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SetOpsRuntime.Difference
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SetOpsRuntime
+[ RUN      ] SetOpsRuntime.Difference
+&gt;&gt; Evaluating runtime of Difference
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SimpleInput.Normal</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/SimpleInput.Normal</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.Normal"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.709231</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.Normal"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SimpleInput.Normal
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SimpleInput
+[ RUN      ] SimpleInput.Normal
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/Normal/Normal.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/Normal/Normal.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/Normal/Normal.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/Normal/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:163: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] SimpleInput.Normal (707 ms)
+[----------] 1 test from SimpleInput (707 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (707 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SimpleInput.Normal
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SimpleInput.SingleSpace</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/SimpleInput.SingleSpace</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.SingleSpace"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.717305</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.SingleSpace"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SimpleInput.SingleSpace
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SimpleInput
+[ RUN      ] SimpleInput.SingleSpace
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/SingleSpace/SingleSpace.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/SingleSpace/SingleSpace.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/SingleSpace/SingleSpace.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/SingleSpace/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:204: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] SimpleInput.SingleSpace (714 ms)
+[----------] 1 test from SimpleInput (714 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (714 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SimpleInput.SingleSpace
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SimpleInput.SingleTab</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/SimpleInput.SingleTab</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.SingleTab"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.731132</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.SingleTab"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SimpleInput.SingleTab
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SimpleInput
+[ RUN      ] SimpleInput.SingleTab
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/SingleTab/SingleTab.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/SingleTab/SingleTab.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/SingleTab/SingleTab.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/SingleTab/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:245: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] SimpleInput.SingleTab (729 ms)
+[----------] 1 test from SimpleInput (729 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (729 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SimpleInput.SingleTab
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SimpleInput.CaseInsensitive</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/SimpleInput.CaseInsensitive</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.CaseInsensitive"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.724621</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.CaseInsensitive"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SimpleInput.CaseInsensitive
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SimpleInput
+[ RUN      ] SimpleInput.CaseInsensitive
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/CaseInsensitive/CaseInsensitive.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/CaseInsensitive/CaseInsensitive.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/CaseInsensitive/CaseInsensitive.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/CaseInsensitive/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:286: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] SimpleInput.CaseInsensitive (722 ms)
+[----------] 1 test from SimpleInput (722 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (722 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SimpleInput.CaseInsensitive
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SimpleInput.MultiMajorSingleLine</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/SimpleInput.MultiMajorSingleLine</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.MultiMajorSingleLine"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.728508</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.MultiMajorSingleLine"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SimpleInput.MultiMajorSingleLine
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SimpleInput
+[ RUN      ] SimpleInput.MultiMajorSingleLine
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiMajorSingleLine/MultiMajorSingleLine.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiMajorSingleLine/MultiMajorSingleLine.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiMajorSingleLine/MultiMajorSingleLine.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiMajorSingleLine/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:329: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] SimpleInput.MultiMajorSingleLine (726 ms)
+[----------] 1 test from SimpleInput (726 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (726 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SimpleInput.MultiMajorSingleLine
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SimpleInput.MultiMajorMultiLine</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/SimpleInput.MultiMajorMultiLine</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.MultiMajorMultiLine"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.715983</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.MultiMajorMultiLine"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SimpleInput.MultiMajorMultiLine
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SimpleInput
+[ RUN      ] SimpleInput.MultiMajorMultiLine
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiMajorMultiLine/MultiMajorMultiLine.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiMajorMultiLine/MultiMajorMultiLine.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiMajorMultiLine/MultiMajorMultiLine.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiMajorMultiLine/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:377: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] SimpleInput.MultiMajorMultiLine (713 ms)
+[----------] 1 test from SimpleInput (713 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (714 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SimpleInput.MultiMajorMultiLine
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>SimpleInput.NoStudentsInMajors</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/SimpleInput.NoStudentsInMajors</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.NoStudentsInMajors"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.72133</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=SimpleInput.NoStudentsInMajors"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = SimpleInput.NoStudentsInMajors
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SimpleInput
+[ RUN      ] SimpleInput.NoStudentsInMajors
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/NoStudentsInMajors/NoStudentsInMajors.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/NoStudentsInMajors/NoStudentsInMajors.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/NoStudentsInMajors/NoStudentsInMajors.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/NoStudentsInMajors/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:409: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] SimpleInput.NoStudentsInMajors (718 ms)
+[----------] 1 test from SimpleInput (718 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (718 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SimpleInput.NoStudentsInMajors
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ModerateInput.MultiSpace</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ModerateInput.MultiSpace</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ModerateInput.MultiSpace"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.736315</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ModerateInput.MultiSpace"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ModerateInput.MultiSpace
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ModerateInput
+[ RUN      ] ModerateInput.MultiSpace
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpace/MultiSpace.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpace/MultiSpace.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpace/MultiSpace.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpace/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:450: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ModerateInput.MultiSpace (734 ms)
+[----------] 1 test from ModerateInput (734 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (734 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ModerateInput.MultiSpace
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ModerateInput.MultiTab</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ModerateInput.MultiTab</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ModerateInput.MultiTab"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.727202</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ModerateInput.MultiTab"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ModerateInput.MultiTab
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ModerateInput
+[ RUN      ] ModerateInput.MultiTab
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiTab/MultiTab.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiTab/MultiTab.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiTab/MultiTab.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiTab/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:491: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ModerateInput.MultiTab (724 ms)
+[----------] 1 test from ModerateInput (724 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (724 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ModerateInput.MultiTab
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ModerateInput.MultiSpaceCaseInsensitive</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ModerateInput.MultiSpaceCaseInsensitive</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ModerateInput.MultiSpaceCaseInsensitive"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.723204</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ModerateInput.MultiSpaceCaseInsensitive"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ModerateInput.MultiSpaceCaseInsensitive
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ModerateInput
+[ RUN      ] ModerateInput.MultiSpaceCaseInsensitive
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceCaseInsensitive/MultiSpaceCaseInsensitive.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceCaseInsensitive/MultiSpaceCaseInsensitive.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceCaseInsensitive/MultiSpaceCaseInsensitive.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceCaseInsensitive/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:532: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ModerateInput.MultiSpaceCaseInsensitive (720 ms)
+[----------] 1 test from ModerateInput (720 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (721 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ModerateInput.MultiSpaceCaseInsensitive
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ModerateInput.MultiTabCaseInsensitive</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ModerateInput.MultiTabCaseInsensitive</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ModerateInput.MultiTabCaseInsensitive"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.733719</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ModerateInput.MultiTabCaseInsensitive"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ModerateInput.MultiTabCaseInsensitive
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ModerateInput
+[ RUN      ] ModerateInput.MultiTabCaseInsensitive
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiTabCaseInsensitive/MultiTabCaseInsensitive.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiTabCaseInsensitive/MultiTabCaseInsensitive.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiTabCaseInsensitive/MultiTabCaseInsensitive.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiTabCaseInsensitive/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:573: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ModerateInput.MultiTabCaseInsensitive (731 ms)
+[----------] 1 test from ModerateInput (731 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (731 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ModerateInput.MultiTabCaseInsensitive
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ComplexInput.MultiSpaceTabCaseInsensitive</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ComplexInput.MultiSpaceTabCaseInsensitive</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.MultiSpaceTabCaseInsensitive"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.725825</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.MultiSpaceTabCaseInsensitive"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ComplexInput.MultiSpaceTabCaseInsensitive
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ComplexInput
+[ RUN      ] ComplexInput.MultiSpaceTabCaseInsensitive
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitive/MultiSpaceTabCaseInsensitive.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitive/MultiSpaceTabCaseInsensitive.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitive/MultiSpaceTabCaseInsensitive.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitive/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:614: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ComplexInput.MultiSpaceTabCaseInsensitive (723 ms)
+[----------] 1 test from ComplexInput (723 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (723 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ComplexInput.MultiSpaceTabCaseInsensitive
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.723091</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ComplexInput
+[ RUN      ] ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitiveMultiMajorSingleLine/MultiSpaceTabCaseInsensitiveMultiMajorSingleLine.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitiveMultiMajorSingleLine/MultiSpaceTabCaseInsensitiveMultiMajorSingleLine.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitiveMultiMajorSingleLine/MultiSpaceTabCaseInsensitiveMultiMajorSingleLine.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitiveMultiMajorSingleLine/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:656: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine (720 ms)
+[----------] 1 test from ComplexInput (720 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (720 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.724518</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ComplexInput
+[ RUN      ] ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitiveMultiMajorMultiLine/MultiSpaceTabCaseInsensitiveMultiMajorMultiLine.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitiveMultiMajorMultiLine/MultiSpaceTabCaseInsensitiveMultiMajorMultiLine.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitiveMultiMajorMultiLine/MultiSpaceTabCaseInsensitiveMultiMajorMultiLine.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/MultiSpaceTabCaseInsensitiveMultiMajorMultiLine/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:701: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine (721 ms)
+[----------] 1 test from ComplexInput (722 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (722 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ComplexInput.AnythingGoes1</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ComplexInput.AnythingGoes1</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.AnythingGoes1"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.724317</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.AnythingGoes1"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ComplexInput.AnythingGoes1
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ComplexInput
+[ RUN      ] ComplexInput.AnythingGoes1
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/AnythingGoes1/AnythingGoes1.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/AnythingGoes1/AnythingGoes1.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/AnythingGoes1/AnythingGoes1.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/AnythingGoes1/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:744: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ComplexInput.AnythingGoes1 (722 ms)
+[----------] 1 test from ComplexInput (722 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (722 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ComplexInput.AnythingGoes1
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>ComplexInput.AnythingGoes2</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/ComplexInput.AnythingGoes2</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.AnythingGoes2"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.712365</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=ComplexInput.AnythingGoes2"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = ComplexInput.AnythingGoes2
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ComplexInput
+[ RUN      ] ComplexInput.AnythingGoes2
+This test is executing your program with the following command line: 
+/usr/bin/valgrind --tool=memcheck -q --leak-check=yes --error-exitcode=113 /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/hw2_majors /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/AnythingGoes2/AnythingGoes2.in /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/AnythingGoes2/AnythingGoes2.cmd /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/AnythingGoes2/AnythingGoes2.out
+Your program's STDOUT was written to: /home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/testFiles/AnythingGoes2/stdout.txt
+/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests.cpp:792: Failure
+Value of: checkOutput(outputFilePath, "testFiles/" + testName + "/" + "Expected.out")
+  Actual: false (Expected output does not match what was returned)
+Expected: true
+[  FAILED  ] ComplexInput.AnythingGoes2 (708 ms)
+[----------] 1 test from ComplexInput (708 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (708 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ComplexInput.AnythingGoes2
+
+ 1 FAILED TEST
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>NormalTest.NormalInputTest</Name>
+			<Path>./majors_tests</Path>
+			<FullName>./majors_tests/NormalTest.NormalInputTest</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=NormalTest.NormalInputTest"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00227499</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw2/hw2_tests/majors_tests/majors_tests "--gtest_filter=NormalTest.NormalInputTest"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = NormalTest.NormalInputTest
+[==========] Running 0 tests from 0 test cases.
+[==========] 0 tests from 0 test cases ran. (0 ms total)
+[  PASSED  ] 0 tests.
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Jun 25 18:39 PDT</EndDateTime>
+		<EndTestTime>1561513166</EndTestTime>
+		<ElapsedMinutes>1.9</ElapsedMinutes>
+	</Testing>
+</Site>

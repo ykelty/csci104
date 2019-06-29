@@ -1,0 +1,59 @@
+SetOpsTestIntersection.TwoEmptySets 1 0.816249
+SetOpsTestIntersection.FirstSetEmpty 1 0.813948
+SetOpsTestIntersection.SecondSetEmpty 1 0.819217
+SetOpsTestIntersection.NonIntersectingSets 1 0.847513
+SetOpsTestIntersection.PartiallyIntersectingSets 1 0.867568
+SetOpsTestIntersection.IdenticalNonEmptySets 1 0.891847
+SetOpsTestUnion.TwoEmptySets 1 0.831354
+SetOpsTestUnion.FirstSetEmpty 1 0.85239
+SetOpsTestUnion.SecondSetEmpty 1 0.857446
+SetOpsTestUnion.NoElementsInCommon 1 0.862058
+SetOpsTestUnion.SomeElementsInCommon 1 0.87917
+SetOpsTestUnion.IdenticalNonEmptySets 1 0.845798
+SetOpsTestDifference.TwoEmptySets 1 0.810092
+SetOpsTestDifference.FirstSetEmpty 1 0.831058
+SetOpsTestDifference.SecondSetEmpty 1 0.816616
+SetOpsTestDifference.IdenticalNonEmptySets 1 0.844825
+SetOpsTestDifference.FirstSubsetOfSecond 1 0.892627
+SetOpsTestDifference.SecondSubsetOfFirst 1 0.837894
+SetOpsTestDifference.NoElementsInCommon 1 0.835843
+SetOpsRuntime.Intersection 0 0
+SetOpsRuntime.Union 0 0
+SetOpsRuntime.Difference 0 0
+SimpleInput.Normal 0 0
+SimpleInput.SingleSpace 0 0
+SimpleInput.SingleTab 0 0
+SimpleInput.CaseInsensitive 0 0
+SimpleInput.MultiMajorSingleLine 0 0
+SimpleInput.MultiMajorMultiLine 0 0
+SimpleInput.NoStudentsInMajors 0 0
+ModerateInput.MultiSpace 0 0
+ModerateInput.MultiTab 0 0
+ModerateInput.MultiSpaceCaseInsensitive 0 0
+ModerateInput.MultiTabCaseInsensitive 0 0
+ComplexInput.MultiSpaceTabCaseInsensitive 0 0
+ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine 0 0
+ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine 0 0
+ComplexInput.AnythingGoes1 0 0
+ComplexInput.AnythingGoes2 0 0
+NormalTest.NormalInputTest 1 0.00227499
+---
+SetOpsRuntime.Intersection
+SetOpsRuntime.Union
+SetOpsRuntime.Difference
+SimpleInput.Normal
+SimpleInput.SingleSpace
+SimpleInput.SingleTab
+SimpleInput.CaseInsensitive
+SimpleInput.MultiMajorSingleLine
+SimpleInput.MultiMajorMultiLine
+SimpleInput.NoStudentsInMajors
+ModerateInput.MultiSpace
+ModerateInput.MultiTab
+ModerateInput.MultiSpaceCaseInsensitive
+ModerateInput.MultiTabCaseInsensitive
+ComplexInput.MultiSpaceTabCaseInsensitive
+ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorSingleLine
+ComplexInput.MultiSpaceTabCaseInsensitiveMultiMajorMultiLine
+ComplexInput.AnythingGoes1
+ComplexInput.AnythingGoes2

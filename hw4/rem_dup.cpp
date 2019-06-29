@@ -52,11 +52,12 @@ int main(int argc, char * argv[]){
 	Item* head3 = new Item(0, nullptr);
 	head3 = concatenate(head1,head2);
 	
-	
+	/*
 	while(head3 != NULL){
 		ofile << head3->val;
 		head3 = head3->next;
 	}
+	*/
 	/*
 	while(head1 != NULL){
 		ofile << head1->val;
