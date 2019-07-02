@@ -4,10 +4,10 @@ twitter:  twitter.cpp util.o twiteng.o tweet.o cmdhandler.o datetime.o user.o ha
 	g++ -g -Wall -std=c++11 twitter.cpp util.o twiteng.o tweet.o cmdhandler.o datetime.o user.o handler.o -o twitter
 
 sentences: sentences.cpp
-	g++ -g -Wall -std=c++11 -c sentences.cpp -o sentences.o
+	g++ -g -Wall -std=c++11 -c sentences.cpp -o sentences
 
 sat_solver: sat_solver.cpp
-	g++ -g -Wall -std=c++11 -c sat_solver.cpp -o sat_solver.o
+	g++ -g -Wall -std=c++11 -c sat_solver.cpp -o sat_solver
 
 test: test.cpp util.o twiteng.o tweet.o cmdhandler.o datetime.o user.o handler.o 
 	g++ -g -Wall -std=c++11 test.cpp util.o twiteng.o tweet.o cmdhandler.o datetime.o user.o handler.o -o test
