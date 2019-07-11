@@ -7,7 +7,7 @@ int main() {
 
 
 // TEST(BSTRemove, EmptyTree)
-
+/*
 	BinarySearchTree<std::string, std::string> testTree;
 
 	testTree.remove("supercalifragilisticexpialodocious");
@@ -25,11 +25,11 @@ int main() {
 	testTree.remove("supercalifragilisticexpialodocious");
 
 	// EXPECT_TRUE(verifyBST(testTree, "blah", "bluh"));
-
+*/
 
 
 // TEST(BSTRemove, SingleRemove)
-
+	/*
 	BinarySearchTree<int, double> bst;
 	bst.insert(std::make_pair(1, 1.0));
 	bst.remove(1);
@@ -37,17 +37,24 @@ int main() {
 	bst.clear();
 
 	// EXPECT_TRUE(verifyBST(bst, ));
+	*/
 
+	BinarySearchTree<int, double> bst;
 	cout << "TWOCHILDRENREMOVE4NODE" << endl;
 	bst.insert(std::make_pair(5, 1.0));
+	cout << "a" << endl;
 	bst.insert(std::make_pair(2, 1.0));
 	bst.insert(std::make_pair(6, 1.0));
+	cout << "a" << endl;
 	bst.insert(std::make_pair(4, 1.0));
+	cout << "a" << endl;
 	bst.print();
 	bst.remove(5);
 	bst.print();
 	bst.clear();
 
+	
+	/*
 	cout << "TWOCHILDERNREMOVE3NODE" << endl;
 	bst.insert(std::make_pair(2, 1.0));
 	bst.insert(std::make_pair(1, 1.0));
@@ -56,6 +63,8 @@ int main() {
 	bst.remove(2);
 	bst.print();
 	bst.clear();
+	*/
+	
 
 
 
