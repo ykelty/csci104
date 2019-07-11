@@ -1,0 +1,4 @@
+Scanning dependencies of target hw4_laundry
+[100%] Building CXX object laundry_tests/CMakeFiles/hw4_laundry.dir/home/cs104/hw-ykelty/hw4/laundry.cpp.o
+[100%] Linking CXX executable hw4_laundry
+[100%] Built target hw4_laundry

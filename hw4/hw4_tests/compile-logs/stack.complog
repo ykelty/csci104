@@ -1,0 +1,24 @@
+[  6%] Built target perf
+[ 56%] Built target kwsys
+[ 87%] Built target testing_utils
+Scanning dependencies of target stack_tests
+[ 93%] Building CXX object stack_tests/CMakeFiles/stack_tests.dir/stack_tests.cpp.o
+In file included from /home/cs104/hw-ykelty/hw4/hw4_tests/stack_tests/stack_tests.cpp:5:0:
+/home/cs104/hw-ykelty/hw4/stack.h: In instantiation of ‘const T& Stack<T>::top() const [with T = std::__cxx11::basic_string<char>]’:
+/home/cs104/hw-ykelty/hw4/hw4_tests/stack_tests/stack_tests.cpp:28:2:   required from here
+/home/cs104/hw-ykelty/hw4/stack.h:73:21: error: invalid initialization of reference of type ‘const std::__cxx11::basic_string<char>&’ from expression of type ‘int’
+  return arr[topArray];
+                     ^
+/home/cs104/hw-ykelty/hw4/stack.h: In instantiation of ‘void Stack<T>::push(const T&) [with T = std::__cxx11::basic_string<char>]’:
+/home/cs104/hw-ykelty/hw4/hw4_tests/stack_tests/stack_tests.cpp:39:20:   required from here
+/home/cs104/hw-ykelty/hw4/stack.h:57:16: error: cannot convert ‘const std::__cxx11::basic_string<char>’ to ‘int’ in assignment
+  arr[topArray] = item;
+                ^
+stack_tests/CMakeFiles/stack_tests.dir/build.make:62: recipe for target 'stack_tests/CMakeFiles/stack_tests.dir/stack_tests.cpp.o' failed
+make[7]: *** [stack_tests/CMakeFiles/stack_tests.dir/stack_tests.cpp.o] Error 1
+CMakeFiles/Makefile2:2937: recipe for target 'stack_tests/CMakeFiles/stack_tests.dir/all' failed
+make[6]: *** [stack_tests/CMakeFiles/stack_tests.dir/all] Error 2
+CMakeFiles/Makefile2:2949: recipe for target 'stack_tests/CMakeFiles/stack_tests.dir/rule' failed
+make[5]: *** [stack_tests/CMakeFiles/stack_tests.dir/rule] Error 2
+Makefile:1195: recipe for target 'stack_tests' failed
+make[4]: *** [stack_tests] Error 2

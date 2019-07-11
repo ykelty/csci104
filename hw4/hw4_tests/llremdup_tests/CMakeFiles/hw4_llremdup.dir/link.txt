@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhw4_llremdup.a  CMakeFiles/hw4_llremdup.dir/home/cs104/hw-ykelty/hw4/rem_dup_lib.cpp.o
+/usr/bin/ranlib libhw4_llremdup.a

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs104/hw-ykelty/hw4/deque.h
+stdexcept
+-
+
+/home/cs104/hw-ykelty/hw4/laundry.cpp
+stack.h
+/home/cs104/hw-ykelty/hw4/stack.h
+fstream
+-
+sstream
+-
+
+/home/cs104/hw-ykelty/hw4/stack.h
+stdexcept
+-
+deque.h
+/home/cs104/hw-ykelty/hw4/deque.h
+

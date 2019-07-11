@@ -1,0 +1,4 @@
+Scanning dependencies of target hw4_llremdup
+[ 50%] Building CXX object llremdup_tests/CMakeFiles/hw4_llremdup.dir/home/cs104/hw-ykelty/hw4/rem_dup_lib.cpp.o
+[100%] Linking CXX static library libhw4_llremdup.a
+[100%] Built target hw4_llremdup

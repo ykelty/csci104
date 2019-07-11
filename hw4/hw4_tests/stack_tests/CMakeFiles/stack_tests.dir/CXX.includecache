@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs104/hw-ykelty/hw4/deque.h
+stdexcept
+-
+
+/home/cs104/hw-ykelty/hw4/hw4_tests/stack_tests/stack_tests.cpp
+stack.h
+-
+random_generator.h
+-
+gtest/gtest.h
+-
+
+/home/cs104/hw-ykelty/hw4/stack.h
+stdexcept
+-
+deque.h
+/home/cs104/hw-ykelty/hw4/deque.h
+
+testing_utils/./random_generator.h
+random
+-
+vector
+-
+set
+-
+string
+-
+cstdint
+-
+

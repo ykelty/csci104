@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs104/hw-ykelty/hw4/rem_dup_lib.cpp
+rem_dup_lib.h
+/home/cs104/hw-ykelty/hw4/rem_dup_lib.h
+iostream
+-
+
+/home/cs104/hw-ykelty/hw4/rem_dup_lib.h
+

@@ -152,3 +152,28 @@ Handler::HANDLER_STATUS_T FollowHandler::process(TwitEng* eng, std::istream& ins
 	eng->dumpFeeds();
 	return HANDLER_QUIT;
 }
+
+//SCC Comand Handler
+SCCHandler::SCCHandler()
+{
+
+}
+
+SCCHandler::SCCHandler(Handler* next)
+  : Handler(next)
+{
+
+}
+
+bool SCCHandler::canHandle(const std::string& cmd) const
+{
+	return cmd == "SCC";
+
+}
+
+Handler::HANDLER_STATUS_T SCCHandler::process(TwitEng* eng, std::istream& instr) const
+{
+
+	eng->dumpFeeds();
+	return HANDLER_QUIT;
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g3 -O0   CMakeFiles/hw4_laundry.dir/home/cs104/hw-ykelty/hw4/laundry.cpp.o  -o hw4_laundry 

@@ -1,0 +1,142 @@
+Duplicates.Empty 0 0
+Duplicates.OneValueNoDuplicate 1 0.962262
+Duplicates.OneValueOneDuplicate 0 0
+Duplicates.TwoValuesNoDuplicate 1 0.897222
+Duplicates.TwoValueOneDuplicateA 1 0.916024
+Duplicates.TwoValueOneDuplicateB 0 0
+Duplicates.ThreeValuesDuplicateStart 1 0.8384
+Duplicates.ThreeValuesDuplicateMid 1 0.862096
+Duplicates.ThreeValuesDuplicateEnd 0 0
+Duplicates.TenNumbers 0 0
+Duplicates.ManyDuplicateSequences 0 0
+Duplicates.DuplicatesMixed 1 0.847819
+Duplicates.RandomStress500x10ele 0 0
+Concatenate.BothEmpty 0 0
+Concatenate.FirstEmptyOneVal 0 0
+Concatenate.SecondEmptyOneVal 0 0
+Concatenate.BothNonEmptyOneVal 0 0
+Concatenate.FirstEmptyMultipleVals 0 0
+Concatenate.SecondEmptyMultipleVals 0 0
+Concatenate.BothNonEmptyMultipleVals 0 0
+DequeInsertBack.OneItemAdd 1 0.856702
+DequeInsertFront.OneItemAdd 1 0.847294
+DequeInsert.EmptyString 1 0.843285
+DequeInsertBack.ThreeItemAdd 0 0
+DequeInsertFront.ThreeItemAdd 0 0
+DequeInsert.FrontThenBack 0 0
+DequeInsert.BackThenFront 0 0
+DequeInsertBack.ARRSIZEPlusOne 0 0
+DequeInsertFront.ARRSIZEPlusOne 0 0
+DequeInsertBack.50RandomElements 0 0
+DequeInsertFront.50RandomElements 0 0
+DequeInsertBack.5x1000RandomElements 0 0
+DequeInsertFront.5x1000RandomElements 0 0
+Deque.ConstructionDestruction 1 1.22986
+Deque.NoElements 1 0.941635
+Deque.Front_PushBack 0 0
+Deque.Front_PushFront 0 0
+Deque.Back_PushBack 0 0
+Deque.Back_PushFront 0 0
+DequeSet.OneItem 1 0.837764
+DequeSet.First 1 0.848781
+DequeSet.Last 1 0.896379
+DequeSet.Middle 1 0.844677
+DequeSet.50x50RandomElements 0 0
+DequeRemove.OneItemFront 1 1.21351
+DequeRemove.OneItemBack 1 0.84154
+DequeRemove.RepeatedOneEleRemoveBack 1 0.833733
+DequeRemove.RepeatedOneEleRemoveFront 1 0.84622
+DequeRemove.Head3Elements 0 0
+DequeRemove.Tail3Elements 0 0
+DequeRemove.AtARRSIZE 0 0
+DequeRemove.AtARRSIZEPlusOne 0 0
+DequeRemove.SongOfBackAndFront 0 0
+DequeRemove.50ElementsFromBack 0 0
+DequeRemove.50ElementsFromFront 0 0
+DequeRuntime.Get 0 0
+DequeRuntime.PushBack 0 0
+DequeRuntime.PushFront 0 0
+DequeRuntime.PopFront 0 0
+DequeRuntime.PopBack 0 0
+Stack.Empty 0 0
+Stack.TopEmpty 0 0
+Stack.OneElementPush 0 0
+Stack.FiveElementPush 0 0
+Stack.OneElementPop 0 0
+Stack.FiveElementPop 0 0
+Stack.PopEmpty 0 0
+Stack.EmptyThenRefill 0 0
+Stack.PopThenAdd 0 0
+StackStress.50x50Elements 0 0
+StackStress.5x1000Elements 0 0
+StackStress.2x10000Elements 0 0
+StackRuntime.Push 0 0
+StackRuntime.Pop 0 0
+StackRuntime.Top 0 0
+laundry_tests.NominalInput1 1 1.80832
+laundry_tests.NominalInput2 1 1.21741
+laundry_tests.NominalInput3 1 1.23256
+laundry_tests.TwoRemovals 1 1.02857
+laundry_tests.ThreeRemovals 1 0.792247
+laundry_tests.OverRemoval1 0 0
+laundry_tests.OverRemoval2 0 0
+laundry_tests.NoRemoval 1 0.958686
+---
+Duplicates.Empty
+Duplicates.OneValueOneDuplicate
+Duplicates.TwoValueOneDuplicateB
+Duplicates.ThreeValuesDuplicateEnd
+Duplicates.TenNumbers
+Duplicates.ManyDuplicateSequences
+Duplicates.RandomStress500x10ele
+Concatenate.BothEmpty
+Concatenate.FirstEmptyOneVal
+Concatenate.SecondEmptyOneVal
+Concatenate.BothNonEmptyOneVal
+Concatenate.FirstEmptyMultipleVals
+Concatenate.SecondEmptyMultipleVals
+Concatenate.BothNonEmptyMultipleVals
+DequeInsertBack.ThreeItemAdd
+DequeInsertFront.ThreeItemAdd
+DequeInsert.FrontThenBack
+DequeInsert.BackThenFront
+DequeInsertBack.ARRSIZEPlusOne
+DequeInsertFront.ARRSIZEPlusOne
+DequeInsertBack.50RandomElements
+DequeInsertFront.50RandomElements
+DequeInsertBack.5x1000RandomElements
+DequeInsertFront.5x1000RandomElements
+Deque.Front_PushBack
+Deque.Front_PushFront
+Deque.Back_PushBack
+Deque.Back_PushFront
+DequeSet.50x50RandomElements
+DequeRemove.Head3Elements
+DequeRemove.Tail3Elements
+DequeRemove.AtARRSIZE
+DequeRemove.AtARRSIZEPlusOne
+DequeRemove.SongOfBackAndFront
+DequeRemove.50ElementsFromBack
+DequeRemove.50ElementsFromFront
+DequeRuntime.Get
+DequeRuntime.PushBack
+DequeRuntime.PushFront
+DequeRuntime.PopFront
+DequeRuntime.PopBack
+Stack.Empty
+Stack.TopEmpty
+Stack.OneElementPush
+Stack.FiveElementPush
+Stack.OneElementPop
+Stack.FiveElementPop
+Stack.PopEmpty
+Stack.EmptyThenRefill
+Stack.PopThenAdd
+StackStress.50x50Elements
+StackStress.5x1000Elements
+StackStress.2x10000Elements
+StackRuntime.Push
+StackRuntime.Pop
+StackRuntime.Top
+laundry_tests.OverRemoval1
+laundry_tests.OverRemoval2
