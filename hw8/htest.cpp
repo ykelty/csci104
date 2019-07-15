@@ -25,7 +25,7 @@ int main(){
 	printAll(test, "Original");
 	test.pop();
 	
-	test.decreaseKey(8, 15);
+	test.decreaseKey(8, 3);
 	printAll(test, "Original");
 
 	return 0;

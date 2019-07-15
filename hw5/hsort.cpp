@@ -23,6 +23,8 @@ int main(){
 	test.push(4);
 	test.push(8);
 	test.push(6);
+	test.pop();
+	test.decreaseKey(8,3);
 
 	printAll(test, "Original");
 
