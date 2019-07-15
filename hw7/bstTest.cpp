@@ -54,7 +54,7 @@ int main() {
 	bst.clear();
 
 	
-	/*
+	
 	cout << "TWOCHILDERNREMOVE3NODE" << endl;
 	bst.insert(std::make_pair(2, 1.0));
 	bst.insert(std::make_pair(1, 1.0));
@@ -63,7 +63,7 @@ int main() {
 	bst.remove(2);
 	bst.print();
 	bst.clear();
-	*/
+	
 	
 
 

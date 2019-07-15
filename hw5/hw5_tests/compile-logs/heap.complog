@@ -1,0 +1,61 @@
+[ 14%] Built target perf
+[ 64%] Built target kwsys
+[ 92%] Built target testing_utils
+Scanning dependencies of target heap_tests
+[ 92%] Building CXX object heap_tests/CMakeFiles/heap_tests.dir/heap_tests.cpp.o
+In file included from /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:5:0:
+/home/cs104/hw-ykelty/hw5/heap.h: In instantiation of ‘void Heap<T, PComparator>::heapify(size_t, size_t) [with T = int; PComparator = std::less<int>; size_t = long unsigned int]’:
+/home/cs104/hw-ykelty/hw5/heap.h:123:10:   required from ‘void Heap<T, PComparator>::pop() [with T = int; PComparator = std::less<int>]’
+/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:71:12:   required from here
+/home/cs104/hw-ykelty/hw5/heap.h:80:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if(child <= effsize && c(items[child], items[largest])){
+                ^
+/home/cs104/hw-ykelty/hw5/heap.h:84:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(largest != loc){
+                ^
+/home/cs104/hw-ykelty/hw5/heap.h: In instantiation of ‘void Heap<T, PComparator>::heapify(size_t, size_t) [with T = int; PComparator = std::greater<int>; size_t = long unsigned int]’:
+/home/cs104/hw-ykelty/hw5/heap.h:123:10:   required from ‘void Heap<T, PComparator>::pop() [with T = int; PComparator = std::greater<int>]’
+/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:263:11:   required from here
+/home/cs104/hw-ykelty/hw5/heap.h:80:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if(child <= effsize && c(items[child], items[largest])){
+                ^
+/home/cs104/hw-ykelty/hw5/heap.h:84:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(largest != loc){
+                ^
+/home/cs104/hw-ykelty/hw5/heap.h: In instantiation of ‘void Heap<T, PComparator>::heapify(size_t, size_t) [with T = std::__cxx11::basic_string<char>; PComparator = std::less<std::__cxx11::basic_string<char> >; size_t = long unsigned int]’:
+/home/cs104/hw-ykelty/hw5/heap.h:123:10:   required from ‘void Heap<T, PComparator>::pop() [with T = std::__cxx11::basic_string<char>; PComparator = std::less<std::__cxx11::basic_string<char> >]’
+/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:277:17:   required from here
+/home/cs104/hw-ykelty/hw5/heap.h:80:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if(child <= effsize && c(items[child], items[largest])){
+                ^
+/home/cs104/hw-ykelty/hw5/heap.h:84:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(largest != loc){
+                ^
+[100%] Linking CXX executable heap_tests
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o: In function `checkHeapContents(Heap<int, std::less<int> >&, std::vector<int, std::allocator<int> >)':
+/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:61: undefined reference to `Heap<int, std::less<int> >::empty() const'
+/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:74: undefined reference to `Heap<int, std::less<int> >::empty() const'
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o: In function `HeapTest_InitiallyEmpty_Test::TestBody()':
+/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:90: undefined reference to `Heap<int, std::less<int> >::empty() const'
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o: In function `HeapTest_SingleItemNonempty_Test::TestBody()':
+/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:109: undefined reference to `Heap<int, std::less<int> >::empty() const'
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o: In function `HeapTest_SingleItemPushPop_Test::TestBody()':
+/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests.cpp:124: undefined reference to `Heap<int, std::less<int> >::empty() const'
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o:/home/cs104/hw-ykelty/hw5/heap.h:99: more undefined references to `Heap<int, std::less<int> >::empty() const' follow
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o: In function `Heap<int, std::greater<int> >::top() const':
+/home/cs104/hw-ykelty/hw5/heap.h:99: undefined reference to `Heap<int, std::greater<int> >::empty() const'
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o: In function `Heap<int, std::greater<int> >::pop()':
+/home/cs104/hw-ykelty/hw5/heap.h:117: undefined reference to `Heap<int, std::greater<int> >::empty() const'
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o: In function `Heap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::top() const':
+/home/cs104/hw-ykelty/hw5/heap.h:99: undefined reference to `Heap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::empty() const'
+CMakeFiles/heap_tests.dir/heap_tests.cpp.o: In function `Heap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::pop()':
+/home/cs104/hw-ykelty/hw5/heap.h:117: undefined reference to `Heap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::empty() const'
+collect2: error: ld returned 1 exit status
+heap_tests/CMakeFiles/heap_tests.dir/build.make:99: recipe for target 'heap_tests/heap_tests' failed
+make[7]: *** [heap_tests/heap_tests] Error 1
+CMakeFiles/Makefile2:935: recipe for target 'heap_tests/CMakeFiles/heap_tests.dir/all' failed
+make[6]: *** [heap_tests/CMakeFiles/heap_tests.dir/all] Error 2
+CMakeFiles/Makefile2:947: recipe for target 'heap_tests/CMakeFiles/heap_tests.dir/rule' failed
+make[5]: *** [heap_tests/CMakeFiles/heap_tests.dir/rule] Error 2
+Makefile:428: recipe for target 'heap_tests' failed
+make[4]: *** [heap_tests] Error 2

@@ -573,6 +573,7 @@ void BinarySearchTree<Key, Value>::remove(const Key& key)
 
             
             Node<Key, Value> *preNode = predecessor(theNode);
+            
             Node<Key, Value> *preParent = preNode->getParent();
             //Node<Key, Value> *preLeft = preNode->getLeft();
             //Node<Key, Value> *preRight = preNode->getRight();

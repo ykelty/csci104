@@ -61,31 +61,31 @@ void Heap<T, PComparator>::push(const T& item){
 template <typename T, typename PComparator>
 void Heap<T, PComparator>::trickleUp(int loc){
 
-  int parent = loc/2;
-  while(parent >= 1 && items[loc] < items[parent] ) 
+  int parent = (loc-1)/m;
+  while(parent >= 0 && c(items[loc],items[parent])) 
   { 
+    
       std::swap(items[parent], items[loc]);
       loc = parent;
-      parent = loc/2;
+      parent = (loc - 1)/m;
   }
 }
 
 template <typename T, typename PComparator>
 void Heap<T, PComparator>::heapify(size_t loc, size_t effsize)
 {
-  for(int i = loc; i > 0; i--){
-    T temp;
-    if(items[loc] > items[loc*2]){
-      temp = items[loc];
-      items[loc] = items[loc*2];
-      items[loc*2] = temp;
+    int largest = loc;
+
+    for(int i = 1; i<=m; i++){
+      int child = m * loc + i;
+      if(child <= effsize && c(items[child], items[largest])){
+        largest = child;
+      }
     }
-    if(items[loc] > items[loc*2 + 1]){
-      temp = items[loc];
-      items[loc] = items[loc*2 + 1];
-      items[loc*2 + 1] = temp;
+    if(largest != loc){
+      std::swap(items[largest], items[loc]);
+      heapify(largest, effsize);
     }
-  }
 }
 
 
@@ -103,7 +103,7 @@ T const & Heap<T,PComparator>::top() const
   // If we get here we know the heap has at least 1 item
   // Add code to return the top element
 
-  return items[1];
+  return items[0];
 
 }
 
@@ -119,15 +119,19 @@ void Heap<T,PComparator>::pop()
     throw std::logic_error("can't pop an empty heap");
   }
 
-  items[1] = items.back();
+  items[0] = items.back();
   items.pop_back();
-  heapify(1, items.size());
+  heapify(0, items.size());
 
 
 
 }
 
+template <typename T, typename PComparator>
+bool Heap<T,PComparator>::empty() const{
+    return items.size() == 0;
 
+}
 
 
 

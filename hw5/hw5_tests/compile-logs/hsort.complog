@@ -1,0 +1,7 @@
+[ 14%] Built target perf
+[ 64%] Built target kwsys
+[ 92%] Built target testing_utils
+Scanning dependencies of target hsort_tests
+[100%] Building CXX object hsort_tests/CMakeFiles/hsort_tests.dir/hsort_tests.cpp.o
+[100%] Linking CXX executable hsort_tests
+[100%] Built target hsort_tests

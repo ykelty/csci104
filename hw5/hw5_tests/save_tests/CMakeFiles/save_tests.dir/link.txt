@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -g3 -O0   CMakeFiles/save_tests.dir/save_tests.cpp.o  -o save_tests libhw5_save.a ../testing_utils/libtesting_utils.a /usr/lib/libgtest_main.a /usr/lib/libgtest.a -lpthread ../testing_utils/kwsys/libkwsys.a ../testing_utils/libperf/libperf.a 

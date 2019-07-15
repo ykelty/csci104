@@ -1,0 +1,3280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20190712-2033-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.5.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="studentVM"
+	OSRelease="4.4.0-104-generic"
+	OSVersion="#127-Ubuntu SMP Mon Dec 11 12:16:42 UTC 2017"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="61"
+	ProcessorCacheSize="3072"
+	NumberOfLogicalCPU="2"
+	NumberOfPhysicalCPU="1"
+	TotalVirtualMemory="2045"
+	TotalPhysicalMemory="2000"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1600"
+	>
+	<Testing>
+		<StartDateTime>Jul 12 13:33 PDT</StartDateTime>
+		<StartTestTime>1562963616</StartTestTime>
+		<TestList>
+			<Test>./heap_tests/HeapTest.ConstructionDestruction</Test>
+			<Test>./heap_tests/HeapTest.InitiallyEmpty</Test>
+			<Test>./heap_tests/HeapTest.EmptyTopException</Test>
+			<Test>./heap_tests/HeapTest.EmptyPopException</Test>
+			<Test>./heap_tests/HeapTest.SingleItemNonempty</Test>
+			<Test>./heap_tests/HeapTest.SingleItemPush</Test>
+			<Test>./heap_tests/HeapTest.SingleItemPushPop</Test>
+			<Test>./heap_tests/HeapTest.TwoElementPush_LowPriFirst</Test>
+			<Test>./heap_tests/HeapTest.TwoElementPush_HighPriFirst</Test>
+			<Test>./heap_tests/HeapTest.Duplicates</Test>
+			<Test>./heap_tests/HeapTest.NegativeElements</Test>
+			<Test>./heap_tests/HeapTest.ThreeElementPush_0_5_10</Test>
+			<Test>./heap_tests/HeapTest.ThreeElementPush_0_10_5</Test>
+			<Test>./heap_tests/HeapTest.ThreeElementPush_5_0_10</Test>
+			<Test>./heap_tests/HeapTest.ThreeElementPush_5_10_0</Test>
+			<Test>./heap_tests/HeapTest.ThreeElementPush_10_0_5</Test>
+			<Test>./heap_tests/HeapTest.ThreeElementPush_10_5_0</Test>
+			<Test>./heap_tests/HeapTest.GreaterComparator</Test>
+			<Test>./heap_tests/HeapTest.StringStorage</Test>
+			<Test>./heap_tests/HeapTest.FiveElementPush_TrinaryHeap</Test>
+			<Test>./heap_tests/HeapTest.SixElementPush_QuaternaryHeap</Test>
+			<Test>./heap_tests/HeapStress.50x50RandomElements_BinaryHeap</Test>
+			<Test>./heap_tests/HeapStress.50x50RandomElements_QuaternaryHeap</Test>
+			<Test>./heap_tests/HeapStress.50x50RandomElements_DodecenaryHeap</Test>
+			<Test>./heap_tests/HeapStress.2x2000RandomElements_Binary</Test>
+			<Test>./heap_tests/HeapRuntime.Add</Test>
+			<Test>./heap_tests/HeapRuntime.Top</Test>
+			<Test>./heap_tests/HeapRuntime.Remove</Test>
+			<Test>./hsort_tests/HSortTest.SortEmpty</Test>
+			<Test>./hsort_tests/HSortTest.SortSingleElement</Test>
+			<Test>./hsort_tests/HSortTest.SortTwoElements_InOrder</Test>
+			<Test>./hsort_tests/HSortTest.SortTwoElements_OutOfOrder</Test>
+			<Test>./hsort_tests/HSortTest.SortThreeElements_10_20_30</Test>
+			<Test>./hsort_tests/HSortTest.SortThreeElements_10_30_20</Test>
+			<Test>./hsort_tests/HSortTest.SortThreeElements_20_10_30</Test>
+			<Test>./hsort_tests/HSortTest.SortThreeElements_20_30_10</Test>
+			<Test>./hsort_tests/HSortTest.SortThreeElements_30_10_20</Test>
+			<Test>./hsort_tests/HSortTest.SortThreeElements_30_20_10</Test>
+			<Test>./hsort_tests/HSortTest.SortThreeElements_Greater</Test>
+			<Test>./hsort_tests/HSortTest.SortStrings</Test>
+			<Test>./hsort_tests/HSortTest.SortPairs</Test>
+			<Test>./hsort_tests/HSortTest.Stress10RandomElements_Less</Test>
+			<Test>./hsort_tests/HSortTest.Stress100RandomElements_Less</Test>
+			<Test>./hsort_tests/HSortTest.Stress1000RandomElements_Less</Test>
+			<Test>./hsort_tests/HSortTest.Stress10000RandomElements_Less</Test>
+			<Test>./hsort_tests/HeapSortRuntime.Runtime</Test>
+			<Test>./mentions_tests/Mentions.NoFollowers</Test>
+			<Test>./mentions_tests/Mentions.DirectMention</Test>
+			<Test>./mentions_tests/Mentions.NoMentions</Test>
+			<Test>./mentions_tests/Mentions.IndirectMentions</Test>
+			<Test>./mentions_tests/Mentions.UsersFollowEachOther</Test>
+			<Test>./mentions_tests/Mentions.DirectAndIndirectMentions</Test>
+			<Test>./mentions_tests/Mentions.TweetInMainAndMention</Test>
+			<Test>./mentions_tests/Mentions.DirectMentionNotFollowingBack</Test>
+			<Test>./mentions_tests/Mentions.NoneOfBryansFeeds</Test>
+			<Test>./follow_tests/Follow.CanFollow</Test>
+			<Test>./follow_tests/Follow.NoFollowing</Test>
+			<Test>./follow_tests/Follow.HasFollowing</Test>
+			<Test>./follow_tests/Follow.NoFollowingSave</Test>
+			<Test>./follow_tests/Follow.HasFollowingSave</Test>
+			<Test>./save_tests/Save.CanSave</Test>
+			<Test>./save_tests/Save.NoChanges</Test>
+			<Test>./save_tests/Save.AddTweet</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>HeapTest.ConstructionDestruction</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.ConstructionDestruction</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ConstructionDestruction"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0507631</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ConstructionDestruction"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.InitiallyEmpty</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.InitiallyEmpty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.InitiallyEmpty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00358605</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.InitiallyEmpty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.EmptyTopException</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.EmptyTopException</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.EmptyTopException"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00334406</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.EmptyTopException"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.EmptyPopException</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.EmptyPopException</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.EmptyPopException"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00376296</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.EmptyPopException"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.SingleItemNonempty</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.SingleItemNonempty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemNonempty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00372005</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemNonempty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.SingleItemPush</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.SingleItemPush</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemPush"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0100589</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemPush"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.SingleItemPushPop</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.SingleItemPushPop</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemPushPop"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00547695</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemPushPop"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.TwoElementPush_LowPriFirst</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.TwoElementPush_LowPriFirst</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.TwoElementPush_LowPriFirst"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0036881</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.TwoElementPush_LowPriFirst"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.TwoElementPush_HighPriFirst</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.TwoElementPush_HighPriFirst</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.TwoElementPush_HighPriFirst"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00345588</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.TwoElementPush_HighPriFirst"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.Duplicates</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.Duplicates</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.Duplicates"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00356913</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.Duplicates"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.NegativeElements</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.NegativeElements</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.NegativeElements"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.010536</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.NegativeElements"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.ThreeElementPush_0_5_10</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.ThreeElementPush_0_5_10</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_0_5_10"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00495577</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_0_5_10"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.ThreeElementPush_0_10_5</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.ThreeElementPush_0_10_5</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_0_10_5"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00381088</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_0_10_5"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.ThreeElementPush_5_0_10</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.ThreeElementPush_5_0_10</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_5_0_10"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0034349</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_5_0_10"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.ThreeElementPush_5_10_0</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.ThreeElementPush_5_10_0</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_5_10_0"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00348806</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_5_10_0"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.ThreeElementPush_10_0_5</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.ThreeElementPush_10_0_5</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_10_0_5"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00829315</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_10_0_5"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.ThreeElementPush_10_5_0</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.ThreeElementPush_10_5_0</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_10_5_0"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00962591</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_10_5_0"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.GreaterComparator</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.GreaterComparator</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.GreaterComparator"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00359797</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.GreaterComparator"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.StringStorage</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.StringStorage</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.StringStorage"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00367689</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.StringStorage"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.FiveElementPush_TrinaryHeap</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.FiveElementPush_TrinaryHeap</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.FiveElementPush_TrinaryHeap"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00367594</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.FiveElementPush_TrinaryHeap"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapTest.SixElementPush_QuaternaryHeap</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapTest.SixElementPush_QuaternaryHeap</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SixElementPush_QuaternaryHeap"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.011797</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SixElementPush_QuaternaryHeap"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapStress.50x50RandomElements_BinaryHeap</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapStress.50x50RandomElements_BinaryHeap</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_BinaryHeap"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0119419</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_BinaryHeap"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapStress.50x50RandomElements_QuaternaryHeap</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapStress.50x50RandomElements_QuaternaryHeap</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_QuaternaryHeap"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00364709</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_QuaternaryHeap"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapStress.50x50RandomElements_DodecenaryHeap</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapStress.50x50RandomElements_DodecenaryHeap</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_DodecenaryHeap"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00383306</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_DodecenaryHeap"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HeapStress.2x2000RandomElements_Binary</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapStress.2x2000RandomElements_Binary</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.2x2000RandomElements_Binary"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00593591</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.2x2000RandomElements_Binary"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>HeapRuntime.Add</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapRuntime.Add</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_runtime_tests</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>HeapRuntime.Top</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapRuntime.Top</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_runtime_tests</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="notrun">
+			<Name>HeapRuntime.Remove</Name>
+			<Path>./heap_tests</Path>
+			<FullName>./heap_tests/HeapRuntime.Remove</FullName>
+			<FullCommandLine></FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value></Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Unable to find executable: /home/cs104/hw-ykelty/hw5/hw5_tests/heap_tests/heap_runtime_tests</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>HSortTest.SortEmpty</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortEmpty</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortEmpty"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.0207</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortEmpty"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8186== Memcheck, a memory error detector
+==8186== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8186== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8186== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortEmpty
+==8186== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortEmpty
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortEmpty
+[       OK ] HSortTest.SortEmpty (13 ms)
+[----------] 1 test from HSortTest (22 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (52 ms total)
+[  PASSED  ] 1 test.
+==8186== 
+==8186== HEAP SUMMARY:
+==8186==     in use at exit: 72,704 bytes in 1 blocks
+==8186==   total heap usage: 298 allocs, 297 frees, 127,800 bytes allocated
+==8186== 
+==8186== LEAK SUMMARY:
+==8186==    definitely lost: 0 bytes in 0 blocks
+==8186==    indirectly lost: 0 bytes in 0 blocks
+==8186==      possibly lost: 0 bytes in 0 blocks
+==8186==    still reachable: 0 bytes in 0 blocks
+==8186==         suppressed: 72,704 bytes in 1 blocks
+==8186== 
+==8186== For counts of detected and suppressed errors, rerun with: -v
+==8186== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>HSortTest.SortSingleElement</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortSingleElement</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortSingleElement"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.82499</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortSingleElement"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8187== Memcheck, a memory error detector
+==8187== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8187== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8187== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortSingleElement
+==8187== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortSingleElement
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortSingleElement
+[       OK ] HSortTest.SortSingleElement (21 ms)
+[----------] 1 test from HSortTest (28 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (58 ms total)
+[  PASSED  ] 1 test.
+==8187== 
+==8187== HEAP SUMMARY:
+==8187==     in use at exit: 72,704 bytes in 1 blocks
+==8187==   total heap usage: 299 allocs, 298 frees, 127,860 bytes allocated
+==8187== 
+==8187== LEAK SUMMARY:
+==8187==    definitely lost: 0 bytes in 0 blocks
+==8187==    indirectly lost: 0 bytes in 0 blocks
+==8187==      possibly lost: 0 bytes in 0 blocks
+==8187==    still reachable: 0 bytes in 0 blocks
+==8187==         suppressed: 72,704 bytes in 1 blocks
+==8187== 
+==8187== For counts of detected and suppressed errors, rerun with: -v
+==8187== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortTwoElements_InOrder</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortTwoElements_InOrder</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortTwoElements_InOrder"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.926996</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortTwoElements_InOrder"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8188== Memcheck, a memory error detector
+==8188== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8188== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8188== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortTwoElements_InOrder
+==8188== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortTwoElements_InOrder
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortTwoElements_InOrder
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:130: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (10) is less than the item at index 0 (20)!)
+Expected: true
+[  FAILED  ] HSortTest.SortTwoElements_InOrder (64 ms)
+[----------] 1 test from HSortTest (73 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (106 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortTwoElements_InOrder
+
+ 1 FAILED TEST
+==8188== 
+==8188== HEAP SUMMARY:
+==8188==     in use at exit: 72,704 bytes in 1 blocks
+==8188==   total heap usage: 366 allocs, 365 frees, 146,878 bytes allocated
+==8188== 
+==8188== LEAK SUMMARY:
+==8188==    definitely lost: 0 bytes in 0 blocks
+==8188==    indirectly lost: 0 bytes in 0 blocks
+==8188==      possibly lost: 0 bytes in 0 blocks
+==8188==    still reachable: 0 bytes in 0 blocks
+==8188==         suppressed: 72,704 bytes in 1 blocks
+==8188== 
+==8188== For counts of detected and suppressed errors, rerun with: -v
+==8188== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortTwoElements_OutOfOrder</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortTwoElements_OutOfOrder</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortTwoElements_OutOfOrder"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.871071</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortTwoElements_OutOfOrder"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8190== Memcheck, a memory error detector
+==8190== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8190== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8190== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortTwoElements_OutOfOrder
+==8190== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortTwoElements_OutOfOrder
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortTwoElements_OutOfOrder
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:138: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (10) is less than the item at index 0 (20)!)
+Expected: true
+[  FAILED  ] HSortTest.SortTwoElements_OutOfOrder (53 ms)
+[----------] 1 test from HSortTest (61 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (91 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortTwoElements_OutOfOrder
+
+ 1 FAILED TEST
+==8190== 
+==8190== HEAP SUMMARY:
+==8190==     in use at exit: 72,704 bytes in 1 blocks
+==8190==   total heap usage: 366 allocs, 365 frees, 146,956 bytes allocated
+==8190== 
+==8190== LEAK SUMMARY:
+==8190==    definitely lost: 0 bytes in 0 blocks
+==8190==    indirectly lost: 0 bytes in 0 blocks
+==8190==      possibly lost: 0 bytes in 0 blocks
+==8190==    still reachable: 0 bytes in 0 blocks
+==8190==         suppressed: 72,704 bytes in 1 blocks
+==8190== 
+==8190== For counts of detected and suppressed errors, rerun with: -v
+==8190== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortThreeElements_10_20_30</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortThreeElements_10_20_30</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_10_20_30"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.886807</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_10_20_30"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8191== Memcheck, a memory error detector
+==8191== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8191== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8191== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortThreeElements_10_20_30
+==8191== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortThreeElements_10_20_30
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortThreeElements_10_20_30
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:146: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (20) is less than the item at index 0 (30)!)
+Expected: true
+[  FAILED  ] HSortTest.SortThreeElements_10_20_30 (57 ms)
+[----------] 1 test from HSortTest (64 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (97 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortThreeElements_10_20_30
+
+ 1 FAILED TEST
+==8191== 
+==8191== HEAP SUMMARY:
+==8191==     in use at exit: 72,704 bytes in 1 blocks
+==8191==   total heap usage: 367 allocs, 366 frees, 146,972 bytes allocated
+==8191== 
+==8191== LEAK SUMMARY:
+==8191==    definitely lost: 0 bytes in 0 blocks
+==8191==    indirectly lost: 0 bytes in 0 blocks
+==8191==      possibly lost: 0 bytes in 0 blocks
+==8191==    still reachable: 0 bytes in 0 blocks
+==8191==         suppressed: 72,704 bytes in 1 blocks
+==8191== 
+==8191== For counts of detected and suppressed errors, rerun with: -v
+==8191== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortThreeElements_10_30_20</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortThreeElements_10_30_20</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_10_30_20"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.899702</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_10_30_20"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8194== Memcheck, a memory error detector
+==8194== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8194== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8194== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortThreeElements_10_30_20
+==8194== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortThreeElements_10_30_20
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortThreeElements_10_30_20
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:154: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (20) is less than the item at index 0 (30)!)
+Expected: true
+[  FAILED  ] HSortTest.SortThreeElements_10_30_20 (54 ms)
+[----------] 1 test from HSortTest (62 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (91 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortThreeElements_10_30_20
+
+ 1 FAILED TEST
+==8194== 
+==8194== HEAP SUMMARY:
+==8194==     in use at exit: 72,704 bytes in 1 blocks
+==8194==   total heap usage: 367 allocs, 366 frees, 146,972 bytes allocated
+==8194== 
+==8194== LEAK SUMMARY:
+==8194==    definitely lost: 0 bytes in 0 blocks
+==8194==    indirectly lost: 0 bytes in 0 blocks
+==8194==      possibly lost: 0 bytes in 0 blocks
+==8194==    still reachable: 0 bytes in 0 blocks
+==8194==         suppressed: 72,704 bytes in 1 blocks
+==8194== 
+==8194== For counts of detected and suppressed errors, rerun with: -v
+==8194== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortThreeElements_20_10_30</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortThreeElements_20_10_30</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_20_10_30"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.865642</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_20_10_30"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8195== Memcheck, a memory error detector
+==8195== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8195== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8195== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortThreeElements_20_10_30
+==8195== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortThreeElements_20_10_30
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortThreeElements_20_10_30
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:162: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (20) is less than the item at index 0 (30)!)
+Expected: true
+[  FAILED  ] HSortTest.SortThreeElements_20_10_30 (57 ms)
+[----------] 1 test from HSortTest (64 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (94 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortThreeElements_20_10_30
+
+ 1 FAILED TEST
+==8195== 
+==8195== HEAP SUMMARY:
+==8195==     in use at exit: 72,704 bytes in 1 blocks
+==8195==   total heap usage: 367 allocs, 366 frees, 146,972 bytes allocated
+==8195== 
+==8195== LEAK SUMMARY:
+==8195==    definitely lost: 0 bytes in 0 blocks
+==8195==    indirectly lost: 0 bytes in 0 blocks
+==8195==      possibly lost: 0 bytes in 0 blocks
+==8195==    still reachable: 0 bytes in 0 blocks
+==8195==         suppressed: 72,704 bytes in 1 blocks
+==8195== 
+==8195== For counts of detected and suppressed errors, rerun with: -v
+==8195== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortThreeElements_20_30_10</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortThreeElements_20_30_10</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_20_30_10"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.846158</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_20_30_10"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8196== Memcheck, a memory error detector
+==8196== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8196== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8196== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortThreeElements_20_30_10
+==8196== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortThreeElements_20_30_10
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortThreeElements_20_30_10
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:170: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (10) is less than the item at index 0 (30)!)
+Expected: true
+[  FAILED  ] HSortTest.SortThreeElements_20_30_10 (53 ms)
+[----------] 1 test from HSortTest (60 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (92 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortThreeElements_20_30_10
+
+ 1 FAILED TEST
+==8196== 
+==8196== HEAP SUMMARY:
+==8196==     in use at exit: 72,704 bytes in 1 blocks
+==8196==   total heap usage: 367 allocs, 366 frees, 146,972 bytes allocated
+==8196== 
+==8196== LEAK SUMMARY:
+==8196==    definitely lost: 0 bytes in 0 blocks
+==8196==    indirectly lost: 0 bytes in 0 blocks
+==8196==      possibly lost: 0 bytes in 0 blocks
+==8196==    still reachable: 0 bytes in 0 blocks
+==8196==         suppressed: 72,704 bytes in 1 blocks
+==8196== 
+==8196== For counts of detected and suppressed errors, rerun with: -v
+==8196== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortThreeElements_30_10_20</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortThreeElements_30_10_20</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_30_10_20"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.87799</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_30_10_20"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8197== Memcheck, a memory error detector
+==8197== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8197== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8197== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortThreeElements_30_10_20
+==8197== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortThreeElements_30_10_20
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortThreeElements_30_10_20
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:178: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (20) is less than the item at index 0 (30)!)
+Expected: true
+[  FAILED  ] HSortTest.SortThreeElements_30_10_20 (59 ms)
+[----------] 1 test from HSortTest (69 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (100 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortThreeElements_30_10_20
+
+ 1 FAILED TEST
+==8197== 
+==8197== HEAP SUMMARY:
+==8197==     in use at exit: 72,704 bytes in 1 blocks
+==8197==   total heap usage: 367 allocs, 366 frees, 146,972 bytes allocated
+==8197== 
+==8197== LEAK SUMMARY:
+==8197==    definitely lost: 0 bytes in 0 blocks
+==8197==    indirectly lost: 0 bytes in 0 blocks
+==8197==      possibly lost: 0 bytes in 0 blocks
+==8197==    still reachable: 0 bytes in 0 blocks
+==8197==         suppressed: 72,704 bytes in 1 blocks
+==8197== 
+==8197== For counts of detected and suppressed errors, rerun with: -v
+==8197== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortThreeElements_30_20_10</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortThreeElements_30_20_10</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_30_20_10"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.879219</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_30_20_10"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8198== Memcheck, a memory error detector
+==8198== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8198== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8198== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortThreeElements_30_20_10
+==8198== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortThreeElements_30_20_10
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortThreeElements_30_20_10
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:186: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (10) is less than the item at index 0 (30)!)
+Expected: true
+[  FAILED  ] HSortTest.SortThreeElements_30_20_10 (64 ms)
+[----------] 1 test from HSortTest (72 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (110 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortThreeElements_30_20_10
+
+ 1 FAILED TEST
+==8198== 
+==8198== HEAP SUMMARY:
+==8198==     in use at exit: 72,704 bytes in 1 blocks
+==8198==   total heap usage: 367 allocs, 366 frees, 146,972 bytes allocated
+==8198== 
+==8198== LEAK SUMMARY:
+==8198==    definitely lost: 0 bytes in 0 blocks
+==8198==    indirectly lost: 0 bytes in 0 blocks
+==8198==      possibly lost: 0 bytes in 0 blocks
+==8198==    still reachable: 0 bytes in 0 blocks
+==8198==         suppressed: 72,704 bytes in 1 blocks
+==8198== 
+==8198== For counts of detected and suppressed errors, rerun with: -v
+==8198== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortThreeElements_Greater</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortThreeElements_Greater</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_Greater"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.884135</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortThreeElements_Greater"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8199== Memcheck, a memory error detector
+==8199== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8199== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8199== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortThreeElements_Greater
+==8199== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortThreeElements_Greater
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortThreeElements_Greater
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:194: Failure
+Value of: checkOrder(mIntContainer, sizeof(elements) / sizeof(int), mIntGreaterComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (20) is less than the item at index 0 (10)!)
+Expected: true
+[  FAILED  ] HSortTest.SortThreeElements_Greater (55 ms)
+[----------] 1 test from HSortTest (63 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (93 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortThreeElements_Greater
+
+ 1 FAILED TEST
+==8199== 
+==8199== HEAP SUMMARY:
+==8199==     in use at exit: 72,704 bytes in 1 blocks
+==8199==   total heap usage: 367 allocs, 366 frees, 146,991 bytes allocated
+==8199== 
+==8199== LEAK SUMMARY:
+==8199==    definitely lost: 0 bytes in 0 blocks
+==8199==    indirectly lost: 0 bytes in 0 blocks
+==8199==      possibly lost: 0 bytes in 0 blocks
+==8199==    still reachable: 0 bytes in 0 blocks
+==8199==         suppressed: 72,704 bytes in 1 blocks
+==8199== 
+==8199== For counts of detected and suppressed errors, rerun with: -v
+==8199== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortStrings</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortStrings</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortStrings"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.883359</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortStrings"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8200== Memcheck, a memory error detector
+==8200== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8200== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8200== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortStrings
+==8200== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortStrings
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortStrings
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:202: Failure
+Value of: checkOrder(mStringContainer, sizeof(elements) / sizeof(std::string), mStringLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (David) is less than the item at index 0 (Esther)!)
+Expected: true
+[  FAILED  ] HSortTest.SortStrings (63 ms)
+[----------] 1 test from HSortTest (69 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (99 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortStrings
+
+ 1 FAILED TEST
+==8200== 
+==8200== HEAP SUMMARY:
+==8200==     in use at exit: 72,704 bytes in 1 blocks
+==8200==   total heap usage: 368 allocs, 367 frees, 147,527 bytes allocated
+==8200== 
+==8200== LEAK SUMMARY:
+==8200==    definitely lost: 0 bytes in 0 blocks
+==8200==    indirectly lost: 0 bytes in 0 blocks
+==8200==      possibly lost: 0 bytes in 0 blocks
+==8200==    still reachable: 0 bytes in 0 blocks
+==8200==         suppressed: 72,704 bytes in 1 blocks
+==8200== 
+==8200== For counts of detected and suppressed errors, rerun with: -v
+==8200== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.SortPairs</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.SortPairs</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortPairs"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.891065</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.SortPairs"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8201== Memcheck, a memory error detector
+==8201== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8201== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8201== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.SortPairs
+==8201== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.SortPairs
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.SortPairs
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:210: Failure
+Value of: checkOrder(mStringIntPairContainer, sizeof(elements) / sizeof(std::pair&lt;std::string, int&gt;), mStringIntPairLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 ([David, 3]) is less than the item at index 0 ([Esther, 2])!)
+Expected: true
+[  FAILED  ] HSortTest.SortPairs (71 ms)
+[----------] 1 test from HSortTest (77 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (109 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.SortPairs
+
+ 1 FAILED TEST
+==8201== 
+==8201== HEAP SUMMARY:
+==8201==     in use at exit: 72,704 bytes in 1 blocks
+==8201==   total heap usage: 370 allocs, 369 frees, 148,305 bytes allocated
+==8201== 
+==8201== LEAK SUMMARY:
+==8201==    definitely lost: 0 bytes in 0 blocks
+==8201==    indirectly lost: 0 bytes in 0 blocks
+==8201==      possibly lost: 0 bytes in 0 blocks
+==8201==    still reachable: 0 bytes in 0 blocks
+==8201==         suppressed: 72,704 bytes in 1 blocks
+==8201== 
+==8201== For counts of detected and suppressed errors, rerun with: -v
+==8201== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.Stress10RandomElements_Less</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.Stress10RandomElements_Less</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.Stress10RandomElements_Less"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.976331</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.Stress10RandomElements_Less"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8202== Memcheck, a memory error detector
+==8202== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8202== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8202== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.Stress10RandomElements_Less
+==8202== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.Stress10RandomElements_Less
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.Stress10RandomElements_Less
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:218: Failure
+Value of: checkOrder(mIntContainer, NUMBER_OF_ITEMS, mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (-16) is less than the item at index 0 (45)!)
+Expected: true
+[  FAILED  ] HSortTest.Stress10RandomElements_Less (68 ms)
+[----------] 1 test from HSortTest (75 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (113 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.Stress10RandomElements_Less
+
+ 1 FAILED TEST
+==8202== 
+==8202== HEAP SUMMARY:
+==8202==     in use at exit: 72,704 bytes in 1 blocks
+==8202==   total heap usage: 365 allocs, 364 frees, 146,801 bytes allocated
+==8202== 
+==8202== LEAK SUMMARY:
+==8202==    definitely lost: 0 bytes in 0 blocks
+==8202==    indirectly lost: 0 bytes in 0 blocks
+==8202==      possibly lost: 0 bytes in 0 blocks
+==8202==    still reachable: 0 bytes in 0 blocks
+==8202==         suppressed: 72,704 bytes in 1 blocks
+==8202== 
+==8202== For counts of detected and suppressed errors, rerun with: -v
+==8202== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.Stress100RandomElements_Less</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.Stress100RandomElements_Less</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.Stress100RandomElements_Less"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.890157</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.Stress100RandomElements_Less"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8203== Memcheck, a memory error detector
+==8203== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8203== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8203== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.Stress100RandomElements_Less
+==8203== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.Stress100RandomElements_Less
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.Stress100RandomElements_Less
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:226: Failure
+Value of: checkOrder(mIntContainer, NUMBER_OF_ITEMS, mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (-298) is less than the item at index 0 (472)!)
+Expected: true
+[  FAILED  ] HSortTest.Stress100RandomElements_Less (65 ms)
+[----------] 1 test from HSortTest (71 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (103 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.Stress100RandomElements_Less
+
+ 1 FAILED TEST
+==8203== 
+==8203== HEAP SUMMARY:
+==8203==     in use at exit: 72,704 bytes in 1 blocks
+==8203==   total heap usage: 365 allocs, 364 frees, 147,219 bytes allocated
+==8203== 
+==8203== LEAK SUMMARY:
+==8203==    definitely lost: 0 bytes in 0 blocks
+==8203==    indirectly lost: 0 bytes in 0 blocks
+==8203==      possibly lost: 0 bytes in 0 blocks
+==8203==    still reachable: 0 bytes in 0 blocks
+==8203==         suppressed: 72,704 bytes in 1 blocks
+==8203== 
+==8203== For counts of detected and suppressed errors, rerun with: -v
+==8203== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.Stress1000RandomElements_Less</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.Stress1000RandomElements_Less</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.Stress1000RandomElements_Less"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.880275</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.Stress1000RandomElements_Less"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8204== Memcheck, a memory error detector
+==8204== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8204== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8204== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.Stress1000RandomElements_Less
+==8204== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.Stress1000RandomElements_Less
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.Stress1000RandomElements_Less
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:234: Failure
+Value of: checkOrder(mIntContainer, NUMBER_OF_ITEMS, mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (-4394) is less than the item at index 0 (5000)!)
+Expected: true
+[  FAILED  ] HSortTest.Stress1000RandomElements_Less (69 ms)
+[----------] 1 test from HSortTest (77 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (109 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.Stress1000RandomElements_Less
+
+ 1 FAILED TEST
+==8204== 
+==8204== HEAP SUMMARY:
+==8204==     in use at exit: 72,704 bytes in 1 blocks
+==8204==   total heap usage: 365 allocs, 364 frees, 150,877 bytes allocated
+==8204== 
+==8204== LEAK SUMMARY:
+==8204==    definitely lost: 0 bytes in 0 blocks
+==8204==    indirectly lost: 0 bytes in 0 blocks
+==8204==      possibly lost: 0 bytes in 0 blocks
+==8204==    still reachable: 0 bytes in 0 blocks
+==8204==         suppressed: 72,704 bytes in 1 blocks
+==8204== 
+==8204== For counts of detected and suppressed errors, rerun with: -v
+==8204== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>HSortTest.Stress10000RandomElements_Less</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HSortTest.Stress10000RandomElements_Less</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.Stress10000RandomElements_Less"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.945535</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests" "--gtest_filter=HSortTest.Stress10000RandomElements_Less"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8205== Memcheck, a memory error detector
+==8205== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8205== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8205== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests --gtest_filter=HSortTest.Stress10000RandomElements_Less
+==8205== 
+Running main() from gtest_main.cc
+Note: Google Test filter = HSortTest.Stress10000RandomElements_Less
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HSortTest
+[ RUN      ] HSortTest.Stress10000RandomElements_Less
+Stack size was 0x800000 bytes, setting it to the max of infinity bytes.
+/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_tests.cpp:244: Failure
+Value of: checkOrder(mIntContainer, NUMBER_OF_ITEMS, mIntLessComp)
+  Actual: false (List is sorted improperly!  Item at index 1 (-46655) is less than the item at index 0 (49994)!)
+Expected: true
+[  FAILED  ] HSortTest.Stress10000RandomElements_Less (112 ms)
+[----------] 1 test from HSortTest (118 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (148 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HSortTest.Stress10000RandomElements_Less
+
+ 1 FAILED TEST
+==8205== 
+==8205== HEAP SUMMARY:
+==8205==     in use at exit: 72,704 bytes in 1 blocks
+==8205==   total heap usage: 367 allocs, 366 frees, 187,961 bytes allocated
+==8205== 
+==8205== LEAK SUMMARY:
+==8205==    definitely lost: 0 bytes in 0 blocks
+==8205==    indirectly lost: 0 bytes in 0 blocks
+==8205==      possibly lost: 0 bytes in 0 blocks
+==8205==    still reachable: 0 bytes in 0 blocks
+==8205==         suppressed: 72,704 bytes in 1 blocks
+==8205== 
+==8205== For counts of detected and suppressed errors, rerun with: -v
+==8205== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>HeapSortRuntime.Runtime</Name>
+			<Path>./hsort_tests</Path>
+			<FullName>./hsort_tests/HeapSortRuntime.Runtime</FullName>
+			<FullCommandLine>/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_runtime_tests "--gtest_filter=HeapSortRuntime.Runtime"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.092294</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/cs104/hw-ykelty/hw5/hw5_tests/hsort_tests/hsort_runtime_tests "--gtest_filter=HeapSortRuntime.Runtime"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Running main() from gtest_main.cc
+Note: Google Test filter = HeapSortRuntime.Runtime
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapSortRuntime
+[ RUN      ] HeapSortRuntime.Runtime
+&gt;&gt; Evaluating runtime of hsort()
+Testing if time complexity could be linear...
+Correlation factor (1.4666) is &gt;= threshold (1.3000)
+&gt;&gt; Time complexity of hsort() is likely linear
+Testing if time complexity could be constant...
+Correlation factor (1.1987) is &lt; threshold (1.3000)
+Testing if time complexity could be logarithmic...
+Correlation factor (0.4100) is &lt; threshold (1.3000)
+Testing if time complexity could be linearithmic...
+Correlation factor (-0.3305) is &lt; threshold (1.3000)
+Testing if time complexity could be quadratic...
+Correlation factor (0.7506) is &lt; threshold (1.3000)
+Testing if time complexity could be cubic...
+Correlation factor (0.4575) is &lt; threshold (1.3000)
+[       OK ] HeapSortRuntime.Runtime (87 ms)
+[----------] 1 test from HeapSortRuntime (87 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (87 ms total)
+[  PASSED  ] 1 test.
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.NoFollowers</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.NoFollowers</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.NoFollowers"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.972154</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.NoFollowers"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8207== Memcheck, a memory error detector
+==8207== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8207== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8207== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.NoFollowers
+==8207== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.NoFollowers
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.NoFollowers
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:39: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.NoFollowers (163 ms)
+[----------] 1 test from Mentions (170 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (201 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.NoFollowers
+
+ 1 FAILED TEST
+==8207== 
+==8207== HEAP SUMMARY:
+==8207==     in use at exit: 76,390 bytes in 55 blocks
+==8207==   total heap usage: 651 allocs, 596 frees, 254,331 bytes allocated
+==8207== 
+==8207== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8207==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8207==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8207==    by 0x40552A: Mentions_NoFollowers_Test::TestBody() (mentions_tests.cpp:19)
+==8207==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8207==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8207==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8207==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8207==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8207==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8207==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8207== 
+==8207== LEAK SUMMARY:
+==8207==    definitely lost: 352 bytes in 2 blocks
+==8207==    indirectly lost: 3,334 bytes in 52 blocks
+==8207==      possibly lost: 0 bytes in 0 blocks
+==8207==    still reachable: 0 bytes in 0 blocks
+==8207==         suppressed: 72,704 bytes in 1 blocks
+==8207== 
+==8207== For counts of detected and suppressed errors, rerun with: -v
+==8207== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.DirectMention</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.DirectMention</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.DirectMention"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.995912</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.DirectMention"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8208== Memcheck, a memory error detector
+==8208== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8208== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8208== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.DirectMention
+==8208== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.DirectMention
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.DirectMention
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:127: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.DirectMention (169 ms)
+[----------] 1 test from Mentions (178 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (210 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.DirectMention
+
+ 1 FAILED TEST
+==8208== 
+==8208== HEAP SUMMARY:
+==8208==     in use at exit: 76,390 bytes in 55 blocks
+==8208==   total heap usage: 651 allocs, 596 frees, 254,351 bytes allocated
+==8208== 
+==8208== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8208==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8208==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8208==    by 0x408038: Mentions_DirectMention_Test::TestBody() (mentions_tests.cpp:107)
+==8208==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8208==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8208==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8208==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8208==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8208==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8208==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8208== 
+==8208== LEAK SUMMARY:
+==8208==    definitely lost: 352 bytes in 2 blocks
+==8208==    indirectly lost: 3,334 bytes in 52 blocks
+==8208==      possibly lost: 0 bytes in 0 blocks
+==8208==    still reachable: 0 bytes in 0 blocks
+==8208==         suppressed: 72,704 bytes in 1 blocks
+==8208== 
+==8208== For counts of detected and suppressed errors, rerun with: -v
+==8208== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.NoMentions</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.NoMentions</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.NoMentions"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.01195</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.NoMentions"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8209== Memcheck, a memory error detector
+==8209== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8209== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8209== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.NoMentions
+==8209== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.NoMentions
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.NoMentions
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:225: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.NoMentions (171 ms)
+[----------] 1 test from Mentions (179 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (210 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.NoMentions
+
+ 1 FAILED TEST
+==8209== 
+==8209== HEAP SUMMARY:
+==8209==     in use at exit: 76,390 bytes in 55 blocks
+==8209==   total heap usage: 651 allocs, 596 frees, 254,330 bytes allocated
+==8209== 
+==8209== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8209==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8209==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8209==    by 0x40AB46: Mentions_NoMentions_Test::TestBody() (mentions_tests.cpp:205)
+==8209==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8209==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8209==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8209==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8209==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8209==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8209==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8209== 
+==8209== LEAK SUMMARY:
+==8209==    definitely lost: 352 bytes in 2 blocks
+==8209==    indirectly lost: 3,334 bytes in 52 blocks
+==8209==      possibly lost: 0 bytes in 0 blocks
+==8209==    still reachable: 0 bytes in 0 blocks
+==8209==         suppressed: 72,704 bytes in 1 blocks
+==8209== 
+==8209== For counts of detected and suppressed errors, rerun with: -v
+==8209== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.IndirectMentions</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.IndirectMentions</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.IndirectMentions"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.969418</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.IndirectMentions"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8210== Memcheck, a memory error detector
+==8210== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8210== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8210== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.IndirectMentions
+==8210== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.IndirectMentions
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.IndirectMentions
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:322: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.IndirectMentions (163 ms)
+[----------] 1 test from Mentions (171 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (200 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.IndirectMentions
+
+ 1 FAILED TEST
+==8210== 
+==8210== HEAP SUMMARY:
+==8210==     in use at exit: 76,390 bytes in 55 blocks
+==8210==   total heap usage: 651 allocs, 596 frees, 254,372 bytes allocated
+==8210== 
+==8210== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8210==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8210==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8210==    by 0x40D654: Mentions_IndirectMentions_Test::TestBody() (mentions_tests.cpp:302)
+==8210==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8210==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8210==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8210==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8210==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8210==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8210==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8210== 
+==8210== LEAK SUMMARY:
+==8210==    definitely lost: 352 bytes in 2 blocks
+==8210==    indirectly lost: 3,334 bytes in 52 blocks
+==8210==      possibly lost: 0 bytes in 0 blocks
+==8210==    still reachable: 0 bytes in 0 blocks
+==8210==         suppressed: 72,704 bytes in 1 blocks
+==8210== 
+==8210== For counts of detected and suppressed errors, rerun with: -v
+==8210== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.UsersFollowEachOther</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.UsersFollowEachOther</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.UsersFollowEachOther"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.990948</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.UsersFollowEachOther"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8211== Memcheck, a memory error detector
+==8211== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8211== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8211== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.UsersFollowEachOther
+==8211== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.UsersFollowEachOther
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.UsersFollowEachOther
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:417: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.UsersFollowEachOther (172 ms)
+[----------] 1 test from Mentions (179 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (217 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.UsersFollowEachOther
+
+ 1 FAILED TEST
+==8211== 
+==8211== HEAP SUMMARY:
+==8211==     in use at exit: 76,390 bytes in 55 blocks
+==8211==   total heap usage: 651 allocs, 596 frees, 254,400 bytes allocated
+==8211== 
+==8211== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8211==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8211==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8211==    by 0x410162: Mentions_UsersFollowEachOther_Test::TestBody() (mentions_tests.cpp:397)
+==8211==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8211==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8211==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8211==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8211==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8211==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8211==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8211== 
+==8211== LEAK SUMMARY:
+==8211==    definitely lost: 352 bytes in 2 blocks
+==8211==    indirectly lost: 3,334 bytes in 52 blocks
+==8211==      possibly lost: 0 bytes in 0 blocks
+==8211==    still reachable: 0 bytes in 0 blocks
+==8211==         suppressed: 72,704 bytes in 1 blocks
+==8211== 
+==8211== For counts of detected and suppressed errors, rerun with: -v
+==8211== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.DirectAndIndirectMentions</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.DirectAndIndirectMentions</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.DirectAndIndirectMentions"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.979009</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.DirectAndIndirectMentions"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8212== Memcheck, a memory error detector
+==8212== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8212== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8212== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.DirectAndIndirectMentions
+==8212== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.DirectAndIndirectMentions
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.DirectAndIndirectMentions
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:513: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.DirectAndIndirectMentions (166 ms)
+[----------] 1 test from Mentions (174 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (204 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.DirectAndIndirectMentions
+
+ 1 FAILED TEST
+==8212== 
+==8212== HEAP SUMMARY:
+==8212==     in use at exit: 76,390 bytes in 55 blocks
+==8212==   total heap usage: 651 allocs, 596 frees, 254,479 bytes allocated
+==8212== 
+==8212== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8212==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8212==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8212==    by 0x412C70: Mentions_DirectAndIndirectMentions_Test::TestBody() (mentions_tests.cpp:493)
+==8212==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8212==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8212==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8212==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8212==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8212==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8212==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8212== 
+==8212== LEAK SUMMARY:
+==8212==    definitely lost: 352 bytes in 2 blocks
+==8212==    indirectly lost: 3,334 bytes in 52 blocks
+==8212==      possibly lost: 0 bytes in 0 blocks
+==8212==    still reachable: 0 bytes in 0 blocks
+==8212==         suppressed: 72,704 bytes in 1 blocks
+==8212== 
+==8212== For counts of detected and suppressed errors, rerun with: -v
+==8212== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.TweetInMainAndMention</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.TweetInMainAndMention</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.TweetInMainAndMention"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.977617</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.TweetInMainAndMention"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8213== Memcheck, a memory error detector
+==8213== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8213== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8213== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.TweetInMainAndMention
+==8213== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.TweetInMainAndMention
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.TweetInMainAndMention
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:601: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.TweetInMainAndMention (166 ms)
+[----------] 1 test from Mentions (173 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (205 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.TweetInMainAndMention
+
+ 1 FAILED TEST
+==8213== 
+==8213== HEAP SUMMARY:
+==8213==     in use at exit: 76,390 bytes in 55 blocks
+==8213==   total heap usage: 651 allocs, 596 frees, 254,407 bytes allocated
+==8213== 
+==8213== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8213==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8213==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8213==    by 0x41577E: Mentions_TweetInMainAndMention_Test::TestBody() (mentions_tests.cpp:581)
+==8213==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8213==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8213==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8213==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8213==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8213==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8213==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8213== 
+==8213== LEAK SUMMARY:
+==8213==    definitely lost: 352 bytes in 2 blocks
+==8213==    indirectly lost: 3,334 bytes in 52 blocks
+==8213==      possibly lost: 0 bytes in 0 blocks
+==8213==    still reachable: 0 bytes in 0 blocks
+==8213==         suppressed: 72,704 bytes in 1 blocks
+==8213== 
+==8213== For counts of detected and suppressed errors, rerun with: -v
+==8213== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.DirectMentionNotFollowingBack</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.DirectMentionNotFollowingBack</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.DirectMentionNotFollowingBack"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.01497</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.DirectMentionNotFollowingBack"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8214== Memcheck, a memory error detector
+==8214== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8214== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8214== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.DirectMentionNotFollowingBack
+==8214== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.DirectMentionNotFollowingBack
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.DirectMentionNotFollowingBack
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:689: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.DirectMentionNotFollowingBack (175 ms)
+[----------] 1 test from Mentions (184 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (217 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.DirectMentionNotFollowingBack
+
+ 1 FAILED TEST
+==8214== 
+==8214== HEAP SUMMARY:
+==8214==     in use at exit: 76,390 bytes in 55 blocks
+==8214==   total heap usage: 651 allocs, 596 frees, 254,551 bytes allocated
+==8214== 
+==8214== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8214==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8214==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8214==    by 0x41828C: Mentions_DirectMentionNotFollowingBack_Test::TestBody() (mentions_tests.cpp:669)
+==8214==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8214==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8214==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8214==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8214==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8214==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8214==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8214== 
+==8214== LEAK SUMMARY:
+==8214==    definitely lost: 352 bytes in 2 blocks
+==8214==    indirectly lost: 3,334 bytes in 52 blocks
+==8214==      possibly lost: 0 bytes in 0 blocks
+==8214==    still reachable: 0 bytes in 0 blocks
+==8214==         suppressed: 72,704 bytes in 1 blocks
+==8214== 
+==8214== For counts of detected and suppressed errors, rerun with: -v
+==8214== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Mentions.NoneOfBryansFeeds</Name>
+			<Path>./mentions_tests</Path>
+			<FullName>./mentions_tests/Mentions.NoneOfBryansFeeds</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.NoneOfBryansFeeds"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.992444</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests" "--gtest_filter=Mentions.NoneOfBryansFeeds"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>==8215== Memcheck, a memory error detector
+==8215== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8215== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8215== Command: /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests --gtest_filter=Mentions.NoneOfBryansFeeds
+==8215== 
+Running main() from gtest_main.cc
+Note: Google Test filter = Mentions.NoneOfBryansFeeds
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from Mentions
+[ RUN      ] Mentions.NoneOfBryansFeeds
+Aaron
+2015-7-3 6:0:1 Aaron I do not follow anyone, and no one follows me therefore this should only appear in Aarons main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+Bryan
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:0:54 Aaron @Bryan This tweet should appear only in Aaron main feed and Bryan mention feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+Calvin
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:4:35 Bryan @Calvin This tweet should appear in Calvin main and mention feeds, and in my main feed
+
+2015-7-4 5:24:23 Calvin @Bryan can see this tweet in his main and mention feeds
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+David
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:19:4 David @Bryan Only Bryan can see this in his mention feed and I should see it in my main feed
+
+Emanuel
+2015-7-3 6:6:55 Bryan This tweet should appear in @Aaron mention feed, and in Bryan, Calvin, David, and Emmanuel main feed
+
+2015-7-3 6:13:54 Calvin This tweet should appear in my, Bryan, David, and Emmanuel main feed
+
+2015-7-3 6:33:33 Emanuel @Bryan I am sure @Aaron can not see this
+
+2015-7-4 5:8:58 Emanuel @Calvin This one should not show up in any feed of @Bryan
+
+/home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests.cpp:777: Failure
+Value of: bryanMentions.fail()
+  Actual: true
+Expected: false
+Unable to open Bryan's mentions feed
+[  FAILED  ] Mentions.NoneOfBryansFeeds (165 ms)
+[----------] 1 test from Mentions (172 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (203 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Mentions.NoneOfBryansFeeds
+
+ 1 FAILED TEST
+==8215== 
+==8215== HEAP SUMMARY:
+==8215==     in use at exit: 76,390 bytes in 55 blocks
+==8215==   total heap usage: 651 allocs, 596 frees, 254,379 bytes allocated
+==8215== 
+==8215== 3,686 (352 direct, 3,334 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 16
+==8215==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8215==    by 0x41E754: TwitEng::parse(char*) (twiteng.cpp:83)
+==8215==    by 0x41AD9A: Mentions_NoneOfBryansFeeds_Test::TestBody() (mentions_tests.cpp:757)
+==8215==    by 0x448C52: void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8215==    by 0x440753: testing::Test::Run() [clone .part.368] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8215==    by 0x440A0C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8215==    by 0x440BF4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8215==    by 0x4430A0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8215==    by 0x4434B0: testing::UnitTest::Run() (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8215==    by 0x40510F: main (in /home/cs104/hw-ykelty/hw5/hw5_tests/mentions_tests/mentions_tests)
+==8215== 
+==8215== LEAK SUMMARY:
+==8215==    definitely lost: 352 bytes in 2 blocks
+==8215==    indirectly lost: 3,334 bytes in 52 blocks
+==8215==      possibly lost: 0 bytes in 0 blocks
+==8215==    still reachable: 0 bytes in 0 blocks
+==8215==         suppressed: 72,704 bytes in 1 blocks
+==8215== 
+==8215== For counts of detected and suppressed errors, rerun with: -v
+==8215== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Follow.CanFollow</Name>
+			<Path>./follow_tests</Path>
+			<FullName>./follow_tests/Follow.CanFollow</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.CanFollow"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00464082</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.CanFollow"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Follow.NoFollowing</Name>
+			<Path>./follow_tests</Path>
+			<FullName>./follow_tests/Follow.NoFollowing</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.NoFollowing"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.003618</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.NoFollowing"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Follow.HasFollowing</Name>
+			<Path>./follow_tests</Path>
+			<FullName>./follow_tests/Follow.HasFollowing</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.HasFollowing"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.012857</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.HasFollowing"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Follow.NoFollowingSave</Name>
+			<Path>./follow_tests</Path>
+			<FullName>./follow_tests/Follow.NoFollowingSave</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.NoFollowingSave"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00552702</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.NoFollowingSave"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Follow.HasFollowingSave</Name>
+			<Path>./follow_tests</Path>
+			<FullName>./follow_tests/Follow.HasFollowingSave</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.HasFollowingSave"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00551605</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests" "--gtest_filter=Follow.HasFollowingSave"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/follow_tests/follow_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Save.CanSave</Name>
+			<Path>./save_tests</Path>
+			<FullName>./save_tests/Save.CanSave</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests" "--gtest_filter=Save.CanSave"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00966311</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests" "--gtest_filter=Save.CanSave"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Save.NoChanges</Name>
+			<Path>./save_tests</Path>
+			<FullName>./save_tests/Save.NoChanges</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests" "--gtest_filter=Save.NoChanges"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00356007</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests" "--gtest_filter=Save.NoChanges"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="failed">
+			<Name>Save.AddTweet</Name>
+			<Path>./save_tests</Path>
+			<FullName>./save_tests/Save.AddTweet</FullName>
+			<FullCommandLine>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests" "--gtest_filter=Save.AddTweet"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>127</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00617003</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/valgrind "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests" "--gtest_filter=Save.AddTweet"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>valgrind: /home/cs104/hw-ykelty/hw5/hw5_tests/save_tests/save_tests: No such file or directory
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Jul 12 13:34 PDT</EndDateTime>
+		<EndTestTime>1562963640</EndTestTime>
+		<ElapsedMinutes>0.4</ElapsedMinutes>
+	</Testing>
+</Site>

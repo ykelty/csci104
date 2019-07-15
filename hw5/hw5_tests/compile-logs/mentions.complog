@@ -1,0 +1,17 @@
+Scanning dependencies of target hw5_mentions
+[ 11%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/util.cpp.o
+[ 22%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/tweet.cpp.o
+[ 33%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/twiteng.cpp.o
+[ 33%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/hsort.cpp.o
+/home/cs104/hw-ykelty/hw5/hsort.cpp: In function ‘void printAll(std::vector<int>, std::__cxx11::string)’:
+/home/cs104/hw-ykelty/hw5/hsort.cpp:11:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < v.size(); i++){
+                   ^
+[ 44%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/datetime.cpp.o
+[ 55%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/cmdhandler.cpp.o
+[ 66%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/test.cpp.o
+[ 77%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/handler.cpp.o
+[ 77%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/twitter.cpp.o
+[ 88%] Building CXX object mentions_tests/CMakeFiles/hw5_mentions.dir/home/cs104/hw-ykelty/hw5/user.cpp.o
+[100%] Linking CXX static library libhw5_mentions.a
+[100%] Built target hw5_mentions
