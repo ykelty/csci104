@@ -33,7 +33,8 @@ unsigned int calculateHash(string mystring)
 	return password;
 
 }
-
+/*
 int main(int argc, char *argv[]){
 	calculateHash(argv[1]);
 }
+*/
